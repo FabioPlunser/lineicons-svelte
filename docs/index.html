@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineicons Svelte - Icon Browser</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #1a1a2e;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .count {
+      text-align: center;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+    .search-container {
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+    #search {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    #search:focus {
+      border-color: #5c6bc0;
+    }
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .icon-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 2px solid transparent;
+    }
+    .icon-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      border-color: #5c6bc0;
+    }
+    .icon-card.copied {
+      background: #e8f5e9;
+      border-color: #4caf50;
+    }
+    .icon-placeholder {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 0.75rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .icon-name {
+      font-size: 0.8rem;
+      color: #555;
+      word-break: break-all;
+    }
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+    }
+    .letter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .letter-nav a {
+      display: inline-block;
+      padding: 0.5rem 0.75rem;
+      background: white;
+      color: #5c6bc0;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .letter-nav a:hover {
+      background: #5c6bc0;
+      color: white;
+    }
+    .letter-section {
+      margin-bottom: 2rem;
+    }
+    .letter-title {
+      font-size: 1.5rem;
+      color: #5c6bc0;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #eee;
+    }
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lineicons Svelte</h1>
+  <p class="subtitle">Click any icon to copy its import statement</p>
+  <p class="count">606 icons available</p>
+  
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search icons..." autocomplete="off">
+  </div>
+
+  <div class="letter-nav" id="letterNav">
+    <a href="#section-5">5</a>
+    <a href="#section-A">A</a>
+    <a href="#section-B">B</a>
+    <a href="#section-C">C</a>
+    <a href="#section-D">D</a>
+    <a href="#section-E">E</a>
+    <a href="#section-F">F</a>
+    <a href="#section-G">G</a>
+    <a href="#section-H">H</a>
+    <a href="#section-I">I</a>
+    <a href="#section-J">J</a>
+    <a href="#section-K">K</a>
+    <a href="#section-L">L</a>
+    <a href="#section-M">M</a>
+    <a href="#section-N">N</a>
+    <a href="#section-O">O</a>
+    <a href="#section-P">P</a>
+    <a href="#section-Q">Q</a>
+    <a href="#section-R">R</a>
+    <a href="#section-S">S</a>
+    <a href="#section-T">T</a>
+    <a href="#section-U">U</a>
+    <a href="#section-V">V</a>
+    <a href="#section-W">W</a>
+    <a href="#section-X">X</a>
+    <a href="#section-Y">Y</a>
+    <a href="#section-Z">Z</a>
+  </div>
+
+  <div id="iconContainer">
+    <div class="letter-section" id="section-5">
+      <h2 class="letter-title">5</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="500px" onclick="copyImport('500px')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">500px</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-A">
+      <h2 class="letter-title">A</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="adobe" onclick="copyImport('adobe')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">adobe</div>
+        </div>
+        <div class="icon-card" data-name="adonis" onclick="copyImport('adonis')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">adonis</div>
+        </div>
+        <div class="icon-card" data-name="aeroplane-1" onclick="copyImport('aeroplane-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">aeroplane-1</div>
+        </div>
+        <div class="icon-card" data-name="agenda" onclick="copyImport('agenda')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">agenda</div>
+        </div>
+        <div class="icon-card" data-name="airbnb" onclick="copyImport('airbnb')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">airbnb</div>
+        </div>
+        <div class="icon-card" data-name="airtable" onclick="copyImport('airtable')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">airtable</div>
+        </div>
+        <div class="icon-card" data-name="alarm-1" onclick="copyImport('alarm-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">alarm-1</div>
+        </div>
+        <div class="icon-card" data-name="align-text-center" onclick="copyImport('align-text-center')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">align-text-center</div>
+        </div>
+        <div class="icon-card" data-name="align-text-left" onclick="copyImport('align-text-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">align-text-left</div>
+        </div>
+        <div class="icon-card" data-name="align-text-right" onclick="copyImport('align-text-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">align-text-right</div>
+        </div>
+        <div class="icon-card" data-name="alpinejs" onclick="copyImport('alpinejs')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">alpinejs</div>
+        </div>
+        <div class="icon-card" data-name="amazon" onclick="copyImport('amazon')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">amazon</div>
+        </div>
+        <div class="icon-card" data-name="amazon-original" onclick="copyImport('amazon-original')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">amazon-original</div>
+        </div>
+        <div class="icon-card" data-name="amazon-pay" onclick="copyImport('amazon-pay')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">amazon-pay</div>
+        </div>
+        <div class="icon-card" data-name="ambulance-1" onclick="copyImport('ambulance-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ambulance-1</div>
+        </div>
+        <div class="icon-card" data-name="amd" onclick="copyImport('amd')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">amd</div>
+        </div>
+        <div class="icon-card" data-name="amex" onclick="copyImport('amex')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">amex</div>
+        </div>
+        <div class="icon-card" data-name="anchor" onclick="copyImport('anchor')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">anchor</div>
+        </div>
+        <div class="icon-card" data-name="android" onclick="copyImport('android')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">android</div>
+        </div>
+        <div class="icon-card" data-name="android-old" onclick="copyImport('android-old')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">android-old</div>
+        </div>
+        <div class="icon-card" data-name="angellist" onclick="copyImport('angellist')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angellist</div>
+        </div>
+        <div class="icon-card" data-name="angle-double-down" onclick="copyImport('angle-double-down')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angle-double-down</div>
+        </div>
+        <div class="icon-card" data-name="angle-double-left" onclick="copyImport('angle-double-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angle-double-left</div>
+        </div>
+        <div class="icon-card" data-name="angle-double-right" onclick="copyImport('angle-double-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angle-double-right</div>
+        </div>
+        <div class="icon-card" data-name="angle-double-up" onclick="copyImport('angle-double-up')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angle-double-up</div>
+        </div>
+        <div class="icon-card" data-name="angular" onclick="copyImport('angular')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">angular</div>
+        </div>
+        <div class="icon-card" data-name="app-store" onclick="copyImport('app-store')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">app-store</div>
+        </div>
+        <div class="icon-card" data-name="apple-brand" onclick="copyImport('apple-brand')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">apple-brand</div>
+        </div>
+        <div class="icon-card" data-name="apple-music" onclick="copyImport('apple-music')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">apple-music</div>
+        </div>
+        <div class="icon-card" data-name="apple-music-alt" onclick="copyImport('apple-music-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">apple-music-alt</div>
+        </div>
+        <div class="icon-card" data-name="apple-pay" onclick="copyImport('apple-pay')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">apple-pay</div>
+        </div>
+        <div class="icon-card" data-name="arc-browser" onclick="copyImport('arc-browser')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arc-browser</div>
+        </div>
+        <div class="icon-card" data-name="arrow-all-direction" onclick="copyImport('arrow-all-direction')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-all-direction</div>
+        </div>
+        <div class="icon-card" data-name="arrow-angular-top-left" onclick="copyImport('arrow-angular-top-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-angular-top-left</div>
+        </div>
+        <div class="icon-card" data-name="arrow-angular-top-right" onclick="copyImport('arrow-angular-top-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-angular-top-right</div>
+        </div>
+        <div class="icon-card" data-name="arrow-both-direction-horizontal-1" onclick="copyImport('arrow-both-direction-horizontal-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-both-direction-horizontal-1</div>
+        </div>
+        <div class="icon-card" data-name="arrow-both-direction-vertical-1" onclick="copyImport('arrow-both-direction-vertical-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-both-direction-vertical-1</div>
+        </div>
+        <div class="icon-card" data-name="arrow-downward" onclick="copyImport('arrow-downward')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-downward</div>
+        </div>
+        <div class="icon-card" data-name="arrow-left" onclick="copyImport('arrow-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-left</div>
+        </div>
+        <div class="icon-card" data-name="arrow-left-circle" onclick="copyImport('arrow-left-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-left-circle</div>
+        </div>
+        <div class="icon-card" data-name="arrow-right" onclick="copyImport('arrow-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-right</div>
+        </div>
+        <div class="icon-card" data-name="arrow-right-circle" onclick="copyImport('arrow-right-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-right-circle</div>
+        </div>
+        <div class="icon-card" data-name="arrow-upward" onclick="copyImport('arrow-upward')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">arrow-upward</div>
+        </div>
+        <div class="icon-card" data-name="asana" onclick="copyImport('asana')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">asana</div>
+        </div>
+        <div class="icon-card" data-name="astro" onclick="copyImport('astro')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">astro</div>
+        </div>
+        <div class="icon-card" data-name="atlassian" onclick="copyImport('atlassian')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">atlassian</div>
+        </div>
+        <div class="icon-card" data-name="audi" onclick="copyImport('audi')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">audi</div>
+        </div>
+        <div class="icon-card" data-name="audi-alt" onclick="copyImport('audi-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">audi-alt</div>
+        </div>
+        <div class="icon-card" data-name="aws" onclick="copyImport('aws')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">aws</div>
+        </div>
+        <div class="icon-card" data-name="azure" onclick="copyImport('azure')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">azure</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-B">
+      <h2 class="letter-title">B</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="badge-decagram-percent" onclick="copyImport('badge-decagram-percent')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">badge-decagram-percent</div>
+        </div>
+        <div class="icon-card" data-name="balloons" onclick="copyImport('balloons')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">balloons</div>
+        </div>
+        <div class="icon-card" data-name="ban-2" onclick="copyImport('ban-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ban-2</div>
+        </div>
+        <div class="icon-card" data-name="bar-chart-4" onclick="copyImport('bar-chart-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bar-chart-4</div>
+        </div>
+        <div class="icon-card" data-name="bar-chart-dollar" onclick="copyImport('bar-chart-dollar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bar-chart-dollar</div>
+        </div>
+        <div class="icon-card" data-name="basket-shopping-3" onclick="copyImport('basket-shopping-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">basket-shopping-3</div>
+        </div>
+        <div class="icon-card" data-name="beat" onclick="copyImport('beat')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">beat</div>
+        </div>
+        <div class="icon-card" data-name="behance" onclick="copyImport('behance')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">behance</div>
+        </div>
+        <div class="icon-card" data-name="bell-1" onclick="copyImport('bell-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bell-1</div>
+        </div>
+        <div class="icon-card" data-name="bike" onclick="copyImport('bike')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bike</div>
+        </div>
+        <div class="icon-card" data-name="bing" onclick="copyImport('bing')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bing</div>
+        </div>
+        <div class="icon-card" data-name="bitbucket" onclick="copyImport('bitbucket')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bitbucket</div>
+        </div>
+        <div class="icon-card" data-name="bitcoin" onclick="copyImport('bitcoin')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bitcoin</div>
+        </div>
+        <div class="icon-card" data-name="bittorrent" onclick="copyImport('bittorrent')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bittorrent</div>
+        </div>
+        <div class="icon-card" data-name="blogger" onclick="copyImport('blogger')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">blogger</div>
+        </div>
+        <div class="icon-card" data-name="blogger-alt" onclick="copyImport('blogger-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">blogger-alt</div>
+        </div>
+        <div class="icon-card" data-name="bluetooth" onclick="copyImport('bluetooth')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bluetooth</div>
+        </div>
+        <div class="icon-card" data-name="bluetooth-logo" onclick="copyImport('bluetooth-logo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bluetooth-logo</div>
+        </div>
+        <div class="icon-card" data-name="bmw" onclick="copyImport('bmw')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bmw</div>
+        </div>
+        <div class="icon-card" data-name="board-writing-3" onclick="copyImport('board-writing-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">board-writing-3</div>
+        </div>
+        <div class="icon-card" data-name="bold" onclick="copyImport('bold')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bold</div>
+        </div>
+        <div class="icon-card" data-name="bolt-2" onclick="copyImport('bolt-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bolt-2</div>
+        </div>
+        <div class="icon-card" data-name="bolt-3" onclick="copyImport('bolt-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bolt-3</div>
+        </div>
+        <div class="icon-card" data-name="book-1" onclick="copyImport('book-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">book-1</div>
+        </div>
+        <div class="icon-card" data-name="bookmark-1" onclick="copyImport('bookmark-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bookmark-1</div>
+        </div>
+        <div class="icon-card" data-name="bookmark-circle" onclick="copyImport('bookmark-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bookmark-circle</div>
+        </div>
+        <div class="icon-card" data-name="books-2" onclick="copyImport('books-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">books-2</div>
+        </div>
+        <div class="icon-card" data-name="bootstrap-5" onclick="copyImport('bootstrap-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bootstrap-5</div>
+        </div>
+        <div class="icon-card" data-name="bootstrap-5-square" onclick="copyImport('bootstrap-5-square')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bootstrap-5-square</div>
+        </div>
+        <div class="icon-card" data-name="box-archive-1" onclick="copyImport('box-archive-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">box-archive-1</div>
+        </div>
+        <div class="icon-card" data-name="box-closed" onclick="copyImport('box-closed')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">box-closed</div>
+        </div>
+        <div class="icon-card" data-name="box-gift-1" onclick="copyImport('box-gift-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">box-gift-1</div>
+        </div>
+        <div class="icon-card" data-name="brave" onclick="copyImport('brave')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">brave</div>
+        </div>
+        <div class="icon-card" data-name="bricks" onclick="copyImport('bricks')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bricks</div>
+        </div>
+        <div class="icon-card" data-name="bridge-3" onclick="copyImport('bridge-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bridge-3</div>
+        </div>
+        <div class="icon-card" data-name="briefcase-1" onclick="copyImport('briefcase-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">briefcase-1</div>
+        </div>
+        <div class="icon-card" data-name="briefcase-2" onclick="copyImport('briefcase-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">briefcase-2</div>
+        </div>
+        <div class="icon-card" data-name="briefcase-plus-1" onclick="copyImport('briefcase-plus-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">briefcase-plus-1</div>
+        </div>
+        <div class="icon-card" data-name="brush-1-rotated" onclick="copyImport('brush-1-rotated')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">brush-1-rotated</div>
+        </div>
+        <div class="icon-card" data-name="brush-2" onclick="copyImport('brush-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">brush-2</div>
+        </div>
+        <div class="icon-card" data-name="btc" onclick="copyImport('btc')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">btc</div>
+        </div>
+        <div class="icon-card" data-name="bug-1" onclick="copyImport('bug-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bug-1</div>
+        </div>
+        <div class="icon-card" data-name="buildings-1" onclick="copyImport('buildings-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">buildings-1</div>
+        </div>
+        <div class="icon-card" data-name="bulb-2" onclick="copyImport('bulb-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bulb-2</div>
+        </div>
+        <div class="icon-card" data-name="bulb-4" onclick="copyImport('bulb-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bulb-4</div>
+        </div>
+        <div class="icon-card" data-name="burger-1" onclick="copyImport('burger-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">burger-1</div>
+        </div>
+        <div class="icon-card" data-name="burger-drink" onclick="copyImport('burger-drink')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">burger-drink</div>
+        </div>
+        <div class="icon-card" data-name="bus-1" onclick="copyImport('bus-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">bus-1</div>
+        </div>
+        <div class="icon-card" data-name="busket-ball" onclick="copyImport('busket-ball')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">busket-ball</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-C">
+      <h2 class="letter-title">C</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="cake-1" onclick="copyImport('cake-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cake-1</div>
+        </div>
+        <div class="icon-card" data-name="calculator-1" onclick="copyImport('calculator-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">calculator-1</div>
+        </div>
+        <div class="icon-card" data-name="calculator-2" onclick="copyImport('calculator-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">calculator-2</div>
+        </div>
+        <div class="icon-card" data-name="calendar-days" onclick="copyImport('calendar-days')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">calendar-days</div>
+        </div>
+        <div class="icon-card" data-name="camera-1" onclick="copyImport('camera-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">camera-1</div>
+        </div>
+        <div class="icon-card" data-name="camera-movie-1" onclick="copyImport('camera-movie-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">camera-movie-1</div>
+        </div>
+        <div class="icon-card" data-name="candy-cane-2" onclick="copyImport('candy-cane-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">candy-cane-2</div>
+        </div>
+        <div class="icon-card" data-name="candy-round-1" onclick="copyImport('candy-round-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">candy-round-1</div>
+        </div>
+        <div class="icon-card" data-name="canva" onclick="copyImport('canva')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">canva</div>
+        </div>
+        <div class="icon-card" data-name="capsule-1" onclick="copyImport('capsule-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">capsule-1</div>
+        </div>
+        <div class="icon-card" data-name="car-2" onclick="copyImport('car-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">car-2</div>
+        </div>
+        <div class="icon-card" data-name="car-4" onclick="copyImport('car-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">car-4</div>
+        </div>
+        <div class="icon-card" data-name="car-6" onclick="copyImport('car-6')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">car-6</div>
+        </div>
+        <div class="icon-card" data-name="caravan-1" onclick="copyImport('caravan-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">caravan-1</div>
+        </div>
+        <div class="icon-card" data-name="cart-1" onclick="copyImport('cart-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cart-1</div>
+        </div>
+        <div class="icon-card" data-name="cart-2" onclick="copyImport('cart-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cart-2</div>
+        </div>
+        <div class="icon-card" data-name="cash-app" onclick="copyImport('cash-app')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cash-app</div>
+        </div>
+        <div class="icon-card" data-name="certificate-badge-1" onclick="copyImport('certificate-badge-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">certificate-badge-1</div>
+        </div>
+        <div class="icon-card" data-name="chat-bubble-2" onclick="copyImport('chat-bubble-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chat-bubble-2</div>
+        </div>
+        <div class="icon-card" data-name="check" onclick="copyImport('check')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">check</div>
+        </div>
+        <div class="icon-card" data-name="check-circle-1" onclick="copyImport('check-circle-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">check-circle-1</div>
+        </div>
+        <div class="icon-card" data-name="check-square-2" onclick="copyImport('check-square-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">check-square-2</div>
+        </div>
+        <div class="icon-card" data-name="chevron-down" onclick="copyImport('chevron-down')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-down</div>
+        </div>
+        <div class="icon-card" data-name="chevron-down-circle" onclick="copyImport('chevron-down-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-down-circle</div>
+        </div>
+        <div class="icon-card" data-name="chevron-left" onclick="copyImport('chevron-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-left</div>
+        </div>
+        <div class="icon-card" data-name="chevron-left-circle" onclick="copyImport('chevron-left-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-left-circle</div>
+        </div>
+        <div class="icon-card" data-name="chevron-right-circle" onclick="copyImport('chevron-right-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-right-circle</div>
+        </div>
+        <div class="icon-card" data-name="chevron-up" onclick="copyImport('chevron-up')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-up</div>
+        </div>
+        <div class="icon-card" data-name="chevron-up-circle" onclick="copyImport('chevron-up-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chevron-up-circle</div>
+        </div>
+        <div class="icon-card" data-name="chrome" onclick="copyImport('chrome')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chrome</div>
+        </div>
+        <div class="icon-card" data-name="chromecast" onclick="copyImport('chromecast')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">chromecast</div>
+        </div>
+        <div class="icon-card" data-name="cisco" onclick="copyImport('cisco')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cisco</div>
+        </div>
+        <div class="icon-card" data-name="claude" onclick="copyImport('claude')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">claude</div>
+        </div>
+        <div class="icon-card" data-name="clickup" onclick="copyImport('clickup')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">clickup</div>
+        </div>
+        <div class="icon-card" data-name="clipboard" onclick="copyImport('clipboard')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">clipboard</div>
+        </div>
+        <div class="icon-card" data-name="cloud-2" onclick="copyImport('cloud-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-2</div>
+        </div>
+        <div class="icon-card" data-name="cloud-bolt-1" onclick="copyImport('cloud-bolt-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-bolt-1</div>
+        </div>
+        <div class="icon-card" data-name="cloud-bolt-2" onclick="copyImport('cloud-bolt-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-bolt-2</div>
+        </div>
+        <div class="icon-card" data-name="cloud-check-circle" onclick="copyImport('cloud-check-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-check-circle</div>
+        </div>
+        <div class="icon-card" data-name="cloud-download" onclick="copyImport('cloud-download')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-download</div>
+        </div>
+        <div class="icon-card" data-name="cloud-iot-2" onclick="copyImport('cloud-iot-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-iot-2</div>
+        </div>
+        <div class="icon-card" data-name="cloud-rain" onclick="copyImport('cloud-rain')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-rain</div>
+        </div>
+        <div class="icon-card" data-name="cloud-refresh-clockwise" onclick="copyImport('cloud-refresh-clockwise')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-refresh-clockwise</div>
+        </div>
+        <div class="icon-card" data-name="cloud-sun" onclick="copyImport('cloud-sun')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-sun</div>
+        </div>
+        <div class="icon-card" data-name="cloud-upload" onclick="copyImport('cloud-upload')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloud-upload</div>
+        </div>
+        <div class="icon-card" data-name="cloudflare" onclick="copyImport('cloudflare')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cloudflare</div>
+        </div>
+        <div class="icon-card" data-name="code-1" onclick="copyImport('code-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">code-1</div>
+        </div>
+        <div class="icon-card" data-name="code-s" onclick="copyImport('code-s')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">code-s</div>
+        </div>
+        <div class="icon-card" data-name="codepen" onclick="copyImport('codepen')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">codepen</div>
+        </div>
+        <div class="icon-card" data-name="coffee-cup-2" onclick="copyImport('coffee-cup-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">coffee-cup-2</div>
+        </div>
+        <div class="icon-card" data-name="coinbase" onclick="copyImport('coinbase')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">coinbase</div>
+        </div>
+        <div class="icon-card" data-name="colour-palette-3" onclick="copyImport('colour-palette-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">colour-palette-3</div>
+        </div>
+        <div class="icon-card" data-name="comment-1" onclick="copyImport('comment-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">comment-1</div>
+        </div>
+        <div class="icon-card" data-name="comment-1-share" onclick="copyImport('comment-1-share')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">comment-1-share</div>
+        </div>
+        <div class="icon-card" data-name="comment-1-text" onclick="copyImport('comment-1-text')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">comment-1-text</div>
+        </div>
+        <div class="icon-card" data-name="compass-drafting-2" onclick="copyImport('compass-drafting-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">compass-drafting-2</div>
+        </div>
+        <div class="icon-card" data-name="connectdevelop" onclick="copyImport('connectdevelop')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">connectdevelop</div>
+        </div>
+        <div class="icon-card" data-name="copilot" onclick="copyImport('copilot')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">copilot</div>
+        </div>
+        <div class="icon-card" data-name="coral" onclick="copyImport('coral')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">coral</div>
+        </div>
+        <div class="icon-card" data-name="cpanel" onclick="copyImport('cpanel')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">cpanel</div>
+        </div>
+        <div class="icon-card" data-name="crane-4" onclick="copyImport('crane-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">crane-4</div>
+        </div>
+        <div class="icon-card" data-name="creative-commons" onclick="copyImport('creative-commons')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">creative-commons</div>
+        </div>
+        <div class="icon-card" data-name="credit-card-multiple" onclick="copyImport('credit-card-multiple')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">credit-card-multiple</div>
+        </div>
+        <div class="icon-card" data-name="crop-2" onclick="copyImport('crop-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">crop-2</div>
+        </div>
+        <div class="icon-card" data-name="crown-3" onclick="copyImport('crown-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">crown-3</div>
+        </div>
+        <div class="icon-card" data-name="css3" onclick="copyImport('css3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">css3</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-D">
+      <h2 class="letter-title">D</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="dashboard-square-1" onclick="copyImport('dashboard-square-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dashboard-square-1</div>
+        </div>
+        <div class="icon-card" data-name="database-2" onclick="copyImport('database-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">database-2</div>
+        </div>
+        <div class="icon-card" data-name="deno" onclick="copyImport('deno')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">deno</div>
+        </div>
+        <div class="icon-card" data-name="dev" onclick="copyImport('dev')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dev</div>
+        </div>
+        <div class="icon-card" data-name="dialogflow" onclick="copyImport('dialogflow')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dialogflow</div>
+        </div>
+        <div class="icon-card" data-name="diamonds-1" onclick="copyImport('diamonds-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">diamonds-1</div>
+        </div>
+        <div class="icon-card" data-name="diamonds-2" onclick="copyImport('diamonds-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">diamonds-2</div>
+        </div>
+        <div class="icon-card" data-name="digitalocean" onclick="copyImport('digitalocean')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">digitalocean</div>
+        </div>
+        <div class="icon-card" data-name="diners-club" onclick="copyImport('diners-club')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">diners-club</div>
+        </div>
+        <div class="icon-card" data-name="direction-ltr" onclick="copyImport('direction-ltr')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">direction-ltr</div>
+        </div>
+        <div class="icon-card" data-name="direction-rtl" onclick="copyImport('direction-rtl')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">direction-rtl</div>
+        </div>
+        <div class="icon-card" data-name="discord" onclick="copyImport('discord')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">discord</div>
+        </div>
+        <div class="icon-card" data-name="discord-chat" onclick="copyImport('discord-chat')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">discord-chat</div>
+        </div>
+        <div class="icon-card" data-name="discover" onclick="copyImport('discover')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">discover</div>
+        </div>
+        <div class="icon-card" data-name="docker" onclick="copyImport('docker')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">docker</div>
+        </div>
+        <div class="icon-card" data-name="dollar" onclick="copyImport('dollar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dollar</div>
+        </div>
+        <div class="icon-card" data-name="dollar-circle" onclick="copyImport('dollar-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dollar-circle</div>
+        </div>
+        <div class="icon-card" data-name="double-quotes-end-1" onclick="copyImport('double-quotes-end-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">double-quotes-end-1</div>
+        </div>
+        <div class="icon-card" data-name="download-1" onclick="copyImport('download-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">download-1</div>
+        </div>
+        <div class="icon-card" data-name="download-circle-1" onclick="copyImport('download-circle-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">download-circle-1</div>
+        </div>
+        <div class="icon-card" data-name="dribbble" onclick="copyImport('dribbble')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dribbble</div>
+        </div>
+        <div class="icon-card" data-name="dribbble-symbol" onclick="copyImport('dribbble-symbol')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dribbble-symbol</div>
+        </div>
+        <div class="icon-card" data-name="drizzle" onclick="copyImport('drizzle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">drizzle</div>
+        </div>
+        <div class="icon-card" data-name="dropbox" onclick="copyImport('dropbox')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dropbox</div>
+        </div>
+        <div class="icon-card" data-name="drupal" onclick="copyImport('drupal')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">drupal</div>
+        </div>
+        <div class="icon-card" data-name="dumbbell-1" onclick="copyImport('dumbbell-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">dumbbell-1</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-E">
+      <h2 class="letter-title">E</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="edge" onclick="copyImport('edge')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">edge</div>
+        </div>
+        <div class="icon-card" data-name="emoji-expressionless" onclick="copyImport('emoji-expressionless')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-expressionless</div>
+        </div>
+        <div class="icon-card" data-name="emoji-expressionless-flat-eyes" onclick="copyImport('emoji-expressionless-flat-eyes')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-expressionless-flat-eyes</div>
+        </div>
+        <div class="icon-card" data-name="emoji-grin" onclick="copyImport('emoji-grin')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-grin</div>
+        </div>
+        <div class="icon-card" data-name="emoji-sad" onclick="copyImport('emoji-sad')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-sad</div>
+        </div>
+        <div class="icon-card" data-name="emoji-smile" onclick="copyImport('emoji-smile')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-smile</div>
+        </div>
+        <div class="icon-card" data-name="emoji-smile-side" onclick="copyImport('emoji-smile-side')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-smile-side</div>
+        </div>
+        <div class="icon-card" data-name="emoji-smile-sunglass" onclick="copyImport('emoji-smile-sunglass')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-smile-sunglass</div>
+        </div>
+        <div class="icon-card" data-name="emoji-smile-tongue" onclick="copyImport('emoji-smile-tongue')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">emoji-smile-tongue</div>
+        </div>
+        <div class="icon-card" data-name="enter" onclick="copyImport('enter')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">enter</div>
+        </div>
+        <div class="icon-card" data-name="enter-down" onclick="copyImport('enter-down')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">enter-down</div>
+        </div>
+        <div class="icon-card" data-name="envato" onclick="copyImport('envato')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">envato</div>
+        </div>
+        <div class="icon-card" data-name="envelope-1" onclick="copyImport('envelope-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">envelope-1</div>
+        </div>
+        <div class="icon-card" data-name="eraser-1" onclick="copyImport('eraser-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">eraser-1</div>
+        </div>
+        <div class="icon-card" data-name="ethereum-logo" onclick="copyImport('ethereum-logo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ethereum-logo</div>
+        </div>
+        <div class="icon-card" data-name="euro" onclick="copyImport('euro')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">euro</div>
+        </div>
+        <div class="icon-card" data-name="exit" onclick="copyImport('exit')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">exit</div>
+        </div>
+        <div class="icon-card" data-name="exit-up" onclick="copyImport('exit-up')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">exit-up</div>
+        </div>
+        <div class="icon-card" data-name="expand-arrow-1" onclick="copyImport('expand-arrow-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">expand-arrow-1</div>
+        </div>
+        <div class="icon-card" data-name="expand-square-4" onclick="copyImport('expand-square-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">expand-square-4</div>
+        </div>
+        <div class="icon-card" data-name="expressjs" onclick="copyImport('expressjs')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">expressjs</div>
+        </div>
+        <div class="icon-card" data-name="eye" onclick="copyImport('eye')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">eye</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-F">
+      <h2 class="letter-title">F</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="facebook" onclick="copyImport('facebook')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">facebook</div>
+        </div>
+        <div class="icon-card" data-name="facebook-messenger" onclick="copyImport('facebook-messenger')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">facebook-messenger</div>
+        </div>
+        <div class="icon-card" data-name="facebook-rounded" onclick="copyImport('facebook-rounded')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">facebook-rounded</div>
+        </div>
+        <div class="icon-card" data-name="facebook-square" onclick="copyImport('facebook-square')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">facebook-square</div>
+        </div>
+        <div class="icon-card" data-name="facetime" onclick="copyImport('facetime')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">facetime</div>
+        </div>
+        <div class="icon-card" data-name="figma" onclick="copyImport('figma')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">figma</div>
+        </div>
+        <div class="icon-card" data-name="file-format-zip" onclick="copyImport('file-format-zip')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-format-zip</div>
+        </div>
+        <div class="icon-card" data-name="file-multiple" onclick="copyImport('file-multiple')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-multiple</div>
+        </div>
+        <div class="icon-card" data-name="file-pencil" onclick="copyImport('file-pencil')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-pencil</div>
+        </div>
+        <div class="icon-card" data-name="file-plus-circle" onclick="copyImport('file-plus-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-plus-circle</div>
+        </div>
+        <div class="icon-card" data-name="file-question" onclick="copyImport('file-question')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-question</div>
+        </div>
+        <div class="icon-card" data-name="file-xmark" onclick="copyImport('file-xmark')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">file-xmark</div>
+        </div>
+        <div class="icon-card" data-name="firebase" onclick="copyImport('firebase')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">firebase</div>
+        </div>
+        <div class="icon-card" data-name="firefox" onclick="copyImport('firefox')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">firefox</div>
+        </div>
+        <div class="icon-card" data-name="firework-rocket-4" onclick="copyImport('firework-rocket-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">firework-rocket-4</div>
+        </div>
+        <div class="icon-card" data-name="fitbit" onclick="copyImport('fitbit')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">fitbit</div>
+        </div>
+        <div class="icon-card" data-name="flag-1" onclick="copyImport('flag-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">flag-1</div>
+        </div>
+        <div class="icon-card" data-name="flag-2" onclick="copyImport('flag-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">flag-2</div>
+        </div>
+        <div class="icon-card" data-name="flickr" onclick="copyImport('flickr')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">flickr</div>
+        </div>
+        <div class="icon-card" data-name="floppy-disk-1" onclick="copyImport('floppy-disk-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">floppy-disk-1</div>
+        </div>
+        <div class="icon-card" data-name="flower-2" onclick="copyImport('flower-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">flower-2</div>
+        </div>
+        <div class="icon-card" data-name="flutter" onclick="copyImport('flutter')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">flutter</div>
+        </div>
+        <div class="icon-card" data-name="folder-1" onclick="copyImport('folder-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">folder-1</div>
+        </div>
+        <div class="icon-card" data-name="ford" onclick="copyImport('ford')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ford</div>
+        </div>
+        <div class="icon-card" data-name="framer" onclick="copyImport('framer')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">framer</div>
+        </div>
+        <div class="icon-card" data-name="funnel-1" onclick="copyImport('funnel-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">funnel-1</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-G">
+      <h2 class="letter-title">G</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="gallery" onclick="copyImport('gallery')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gallery</div>
+        </div>
+        <div class="icon-card" data-name="game-pad-modern-1" onclick="copyImport('game-pad-modern-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">game-pad-modern-1</div>
+        </div>
+        <div class="icon-card" data-name="gatsby" onclick="copyImport('gatsby')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gatsby</div>
+        </div>
+        <div class="icon-card" data-name="gauge-1" onclick="copyImport('gauge-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gauge-1</div>
+        </div>
+        <div class="icon-card" data-name="gear-1" onclick="copyImport('gear-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gear-1</div>
+        </div>
+        <div class="icon-card" data-name="gears-3" onclick="copyImport('gears-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gears-3</div>
+        </div>
+        <div class="icon-card" data-name="gemini" onclick="copyImport('gemini')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">gemini</div>
+        </div>
+        <div class="icon-card" data-name="git" onclick="copyImport('git')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">git</div>
+        </div>
+        <div class="icon-card" data-name="github" onclick="copyImport('github')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">github</div>
+        </div>
+        <div class="icon-card" data-name="glass-juice-1" onclick="copyImport('glass-juice-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">glass-juice-1</div>
+        </div>
+        <div class="icon-card" data-name="globe-1" onclick="copyImport('globe-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">globe-1</div>
+        </div>
+        <div class="icon-card" data-name="globe-stand" onclick="copyImport('globe-stand')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">globe-stand</div>
+        </div>
+        <div class="icon-card" data-name="go" onclick="copyImport('go')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">go</div>
+        </div>
+        <div class="icon-card" data-name="goodreads" onclick="copyImport('goodreads')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">goodreads</div>
+        </div>
+        <div class="icon-card" data-name="google" onclick="copyImport('google')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google</div>
+        </div>
+        <div class="icon-card" data-name="google-cloud" onclick="copyImport('google-cloud')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google-cloud</div>
+        </div>
+        <div class="icon-card" data-name="google-drive" onclick="copyImport('google-drive')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google-drive</div>
+        </div>
+        <div class="icon-card" data-name="google-meet" onclick="copyImport('google-meet')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google-meet</div>
+        </div>
+        <div class="icon-card" data-name="google-pay" onclick="copyImport('google-pay')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google-pay</div>
+        </div>
+        <div class="icon-card" data-name="google-wallet" onclick="copyImport('google-wallet')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">google-wallet</div>
+        </div>
+        <div class="icon-card" data-name="graduation-cap-1" onclick="copyImport('graduation-cap-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">graduation-cap-1</div>
+        </div>
+        <div class="icon-card" data-name="grammarly" onclick="copyImport('grammarly')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">grammarly</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-H">
+      <h2 class="letter-title">H</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="hacker-news" onclick="copyImport('hacker-news')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hacker-news</div>
+        </div>
+        <div class="icon-card" data-name="hammer-1" onclick="copyImport('hammer-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hammer-1</div>
+        </div>
+        <div class="icon-card" data-name="hammer-2" onclick="copyImport('hammer-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hammer-2</div>
+        </div>
+        <div class="icon-card" data-name="hand-mic" onclick="copyImport('hand-mic')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-mic</div>
+        </div>
+        <div class="icon-card" data-name="hand-shake" onclick="copyImport('hand-shake')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-shake</div>
+        </div>
+        <div class="icon-card" data-name="hand-stop" onclick="copyImport('hand-stop')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-stop</div>
+        </div>
+        <div class="icon-card" data-name="hand-taking-dollar" onclick="copyImport('hand-taking-dollar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-taking-dollar</div>
+        </div>
+        <div class="icon-card" data-name="hand-taking-leaf-1" onclick="copyImport('hand-taking-leaf-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-taking-leaf-1</div>
+        </div>
+        <div class="icon-card" data-name="hand-taking-user" onclick="copyImport('hand-taking-user')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hand-taking-user</div>
+        </div>
+        <div class="icon-card" data-name="hashnode" onclick="copyImport('hashnode')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hashnode</div>
+        </div>
+        <div class="icon-card" data-name="hat-chef-3" onclick="copyImport('hat-chef-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hat-chef-3</div>
+        </div>
+        <div class="icon-card" data-name="headphone-1" onclick="copyImport('headphone-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">headphone-1</div>
+        </div>
+        <div class="icon-card" data-name="heart" onclick="copyImport('heart')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">heart</div>
+        </div>
+        <div class="icon-card" data-name="helicopter-2" onclick="copyImport('helicopter-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">helicopter-2</div>
+        </div>
+        <div class="icon-card" data-name="helmet-safety-1" onclick="copyImport('helmet-safety-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">helmet-safety-1</div>
+        </div>
+        <div class="icon-card" data-name="hierarchy-1" onclick="copyImport('hierarchy-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hierarchy-1</div>
+        </div>
+        <div class="icon-card" data-name="highlighter-1" onclick="copyImport('highlighter-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">highlighter-1</div>
+        </div>
+        <div class="icon-card" data-name="highlighter-2" onclick="copyImport('highlighter-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">highlighter-2</div>
+        </div>
+        <div class="icon-card" data-name="home-2" onclick="copyImport('home-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">home-2</div>
+        </div>
+        <div class="icon-card" data-name="hospital-2" onclick="copyImport('hospital-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hospital-2</div>
+        </div>
+        <div class="icon-card" data-name="hourglass" onclick="copyImport('hourglass')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">hourglass</div>
+        </div>
+        <div class="icon-card" data-name="html5" onclick="copyImport('html5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">html5</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-I">
+      <h2 class="letter-title">I</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="ibm" onclick="copyImport('ibm')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ibm</div>
+        </div>
+        <div class="icon-card" data-name="id-card" onclick="copyImport('id-card')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">id-card</div>
+        </div>
+        <div class="icon-card" data-name="imdb" onclick="copyImport('imdb')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">imdb</div>
+        </div>
+        <div class="icon-card" data-name="indent" onclick="copyImport('indent')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">indent</div>
+        </div>
+        <div class="icon-card" data-name="info" onclick="copyImport('info')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">info</div>
+        </div>
+        <div class="icon-card" data-name="injection-1" onclick="copyImport('injection-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">injection-1</div>
+        </div>
+        <div class="icon-card" data-name="instagram" onclick="copyImport('instagram')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">instagram</div>
+        </div>
+        <div class="icon-card" data-name="instagram-logotype" onclick="copyImport('instagram-logotype')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">instagram-logotype</div>
+        </div>
+        <div class="icon-card" data-name="intel" onclick="copyImport('intel')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">intel</div>
+        </div>
+        <div class="icon-card" data-name="ios" onclick="copyImport('ios')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ios</div>
+        </div>
+        <div class="icon-card" data-name="island-2" onclick="copyImport('island-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">island-2</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-J">
+      <h2 class="letter-title">J</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="jaguar" onclick="copyImport('jaguar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">jaguar</div>
+        </div>
+        <div class="icon-card" data-name="jamstack" onclick="copyImport('jamstack')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">jamstack</div>
+        </div>
+        <div class="icon-card" data-name="java" onclick="copyImport('java')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">java</div>
+        </div>
+        <div class="icon-card" data-name="javascript" onclick="copyImport('javascript')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">javascript</div>
+        </div>
+        <div class="icon-card" data-name="jcb" onclick="copyImport('jcb')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">jcb</div>
+        </div>
+        <div class="icon-card" data-name="joomla" onclick="copyImport('joomla')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">joomla</div>
+        </div>
+        <div class="icon-card" data-name="jsfiddle" onclick="copyImport('jsfiddle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">jsfiddle</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-K">
+      <h2 class="letter-title">K</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="key-1" onclick="copyImport('key-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">key-1</div>
+        </div>
+        <div class="icon-card" data-name="keyboard" onclick="copyImport('keyboard')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">keyboard</div>
+        </div>
+        <div class="icon-card" data-name="knife-fork-1" onclick="copyImport('knife-fork-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">knife-fork-1</div>
+        </div>
+        <div class="icon-card" data-name="kubernetes" onclick="copyImport('kubernetes')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">kubernetes</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-L">
+      <h2 class="letter-title">L</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="label-dollar-2" onclick="copyImport('label-dollar-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">label-dollar-2</div>
+        </div>
+        <div class="icon-card" data-name="laptop-2" onclick="copyImport('laptop-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">laptop-2</div>
+        </div>
+        <div class="icon-card" data-name="laptop-phone" onclick="copyImport('laptop-phone')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">laptop-phone</div>
+        </div>
+        <div class="icon-card" data-name="laravel" onclick="copyImport('laravel')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">laravel</div>
+        </div>
+        <div class="icon-card" data-name="layers-1" onclick="copyImport('layers-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">layers-1</div>
+        </div>
+        <div class="icon-card" data-name="layout-26" onclick="copyImport('layout-26')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">layout-26</div>
+        </div>
+        <div class="icon-card" data-name="layout-9" onclick="copyImport('layout-9')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">layout-9</div>
+        </div>
+        <div class="icon-card" data-name="leaf-1" onclick="copyImport('leaf-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">leaf-1</div>
+        </div>
+        <div class="icon-card" data-name="leaf-6" onclick="copyImport('leaf-6')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">leaf-6</div>
+        </div>
+        <div class="icon-card" data-name="lemon-squeezy" onclick="copyImport('lemon-squeezy')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">lemon-squeezy</div>
+        </div>
+        <div class="icon-card" data-name="life-guard-tube-1" onclick="copyImport('life-guard-tube-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">life-guard-tube-1</div>
+        </div>
+        <div class="icon-card" data-name="line" onclick="copyImport('line')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">line</div>
+        </div>
+        <div class="icon-card" data-name="line-dashed" onclick="copyImport('line-dashed')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">line-dashed</div>
+        </div>
+        <div class="icon-card" data-name="line-dotted" onclick="copyImport('line-dotted')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">line-dotted</div>
+        </div>
+        <div class="icon-card" data-name="line-height" onclick="copyImport('line-height')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">line-height</div>
+        </div>
+        <div class="icon-card" data-name="lineicons" onclick="copyImport('lineicons')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">lineicons</div>
+        </div>
+        <div class="icon-card" data-name="link-2-angular-right" onclick="copyImport('link-2-angular-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">link-2-angular-right</div>
+        </div>
+        <div class="icon-card" data-name="linkedin" onclick="copyImport('linkedin')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">linkedin</div>
+        </div>
+        <div class="icon-card" data-name="location-arrow-right" onclick="copyImport('location-arrow-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">location-arrow-right</div>
+        </div>
+        <div class="icon-card" data-name="locked-1" onclick="copyImport('locked-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">locked-1</div>
+        </div>
+        <div class="icon-card" data-name="locked-2" onclick="copyImport('locked-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">locked-2</div>
+        </div>
+        <div class="icon-card" data-name="loom" onclick="copyImport('loom')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">loom</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-M">
+      <h2 class="letter-title">M</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="magento" onclick="copyImport('magento')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">magento</div>
+        </div>
+        <div class="icon-card" data-name="magnet" onclick="copyImport('magnet')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">magnet</div>
+        </div>
+        <div class="icon-card" data-name="mailchimp" onclick="copyImport('mailchimp')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mailchimp</div>
+        </div>
+        <div class="icon-card" data-name="map-marker-1" onclick="copyImport('map-marker-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">map-marker-1</div>
+        </div>
+        <div class="icon-card" data-name="map-marker-5" onclick="copyImport('map-marker-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">map-marker-5</div>
+        </div>
+        <div class="icon-card" data-name="map-pin-5" onclick="copyImport('map-pin-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">map-pin-5</div>
+        </div>
+        <div class="icon-card" data-name="markdown" onclick="copyImport('markdown')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">markdown</div>
+        </div>
+        <div class="icon-card" data-name="mastercard" onclick="copyImport('mastercard')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mastercard</div>
+        </div>
+        <div class="icon-card" data-name="medium" onclick="copyImport('medium')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">medium</div>
+        </div>
+        <div class="icon-card" data-name="medium-alt" onclick="copyImport('medium-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">medium-alt</div>
+        </div>
+        <div class="icon-card" data-name="megaphone-1" onclick="copyImport('megaphone-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">megaphone-1</div>
+        </div>
+        <div class="icon-card" data-name="menu-cheesburger" onclick="copyImport('menu-cheesburger')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">menu-cheesburger</div>
+        </div>
+        <div class="icon-card" data-name="menu-hamburger-1" onclick="copyImport('menu-hamburger-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">menu-hamburger-1</div>
+        </div>
+        <div class="icon-card" data-name="menu-meatballs-1" onclick="copyImport('menu-meatballs-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">menu-meatballs-1</div>
+        </div>
+        <div class="icon-card" data-name="menu-meatballs-2" onclick="copyImport('menu-meatballs-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">menu-meatballs-2</div>
+        </div>
+        <div class="icon-card" data-name="mercedes" onclick="copyImport('mercedes')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mercedes</div>
+        </div>
+        <div class="icon-card" data-name="message-2" onclick="copyImport('message-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">message-2</div>
+        </div>
+        <div class="icon-card" data-name="message-2-question" onclick="copyImport('message-2-question')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">message-2-question</div>
+        </div>
+        <div class="icon-card" data-name="message-3-text" onclick="copyImport('message-3-text')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">message-3-text</div>
+        </div>
+        <div class="icon-card" data-name="meta" onclick="copyImport('meta')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">meta</div>
+        </div>
+        <div class="icon-card" data-name="meta-alt" onclick="copyImport('meta-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">meta-alt</div>
+        </div>
+        <div class="icon-card" data-name="microphone-1" onclick="copyImport('microphone-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">microphone-1</div>
+        </div>
+        <div class="icon-card" data-name="microscope" onclick="copyImport('microscope')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">microscope</div>
+        </div>
+        <div class="icon-card" data-name="microsoft" onclick="copyImport('microsoft')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">microsoft</div>
+        </div>
+        <div class="icon-card" data-name="microsoft-edge" onclick="copyImport('microsoft-edge')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">microsoft-edge</div>
+        </div>
+        <div class="icon-card" data-name="microsoft-teams" onclick="copyImport('microsoft-teams')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">microsoft-teams</div>
+        </div>
+        <div class="icon-card" data-name="minus" onclick="copyImport('minus')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">minus</div>
+        </div>
+        <div class="icon-card" data-name="minus-circle" onclick="copyImport('minus-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">minus-circle</div>
+        </div>
+        <div class="icon-card" data-name="mongodb" onclick="copyImport('mongodb')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mongodb</div>
+        </div>
+        <div class="icon-card" data-name="monitor" onclick="copyImport('monitor')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">monitor</div>
+        </div>
+        <div class="icon-card" data-name="monitor-code" onclick="copyImport('monitor-code')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">monitor-code</div>
+        </div>
+        <div class="icon-card" data-name="monitor-mac" onclick="copyImport('monitor-mac')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">monitor-mac</div>
+        </div>
+        <div class="icon-card" data-name="moon-half-right-5" onclick="copyImport('moon-half-right-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">moon-half-right-5</div>
+        </div>
+        <div class="icon-card" data-name="mountains-2" onclick="copyImport('mountains-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mountains-2</div>
+        </div>
+        <div class="icon-card" data-name="mouse-2" onclick="copyImport('mouse-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mouse-2</div>
+        </div>
+        <div class="icon-card" data-name="mushroom-1" onclick="copyImport('mushroom-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mushroom-1</div>
+        </div>
+        <div class="icon-card" data-name="mushroom-5" onclick="copyImport('mushroom-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mushroom-5</div>
+        </div>
+        <div class="icon-card" data-name="music" onclick="copyImport('music')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">music</div>
+        </div>
+        <div class="icon-card" data-name="mysql" onclick="copyImport('mysql')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">mysql</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-N">
+      <h2 class="letter-title">N</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="nasa" onclick="copyImport('nasa')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nasa</div>
+        </div>
+        <div class="icon-card" data-name="netflix" onclick="copyImport('netflix')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">netflix</div>
+        </div>
+        <div class="icon-card" data-name="netlify" onclick="copyImport('netlify')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">netlify</div>
+        </div>
+        <div class="icon-card" data-name="next-step-2" onclick="copyImport('next-step-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">next-step-2</div>
+        </div>
+        <div class="icon-card" data-name="nextjs" onclick="copyImport('nextjs')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nextjs</div>
+        </div>
+        <div class="icon-card" data-name="nike" onclick="copyImport('nike')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nike</div>
+        </div>
+        <div class="icon-card" data-name="nissan" onclick="copyImport('nissan')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nissan</div>
+        </div>
+        <div class="icon-card" data-name="nodejs" onclick="copyImport('nodejs')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nodejs</div>
+        </div>
+        <div class="icon-card" data-name="nodejs-alt" onclick="copyImport('nodejs-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nodejs-alt</div>
+        </div>
+        <div class="icon-card" data-name="notebook-1" onclick="copyImport('notebook-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">notebook-1</div>
+        </div>
+        <div class="icon-card" data-name="notion" onclick="copyImport('notion')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">notion</div>
+        </div>
+        <div class="icon-card" data-name="npm" onclick="copyImport('npm')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">npm</div>
+        </div>
+        <div class="icon-card" data-name="nuxt" onclick="copyImport('nuxt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nuxt</div>
+        </div>
+        <div class="icon-card" data-name="nvidia" onclick="copyImport('nvidia')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">nvidia</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-O">
+      <h2 class="letter-title">O</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="oculus" onclick="copyImport('oculus')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">oculus</div>
+        </div>
+        <div class="icon-card" data-name="open-ai" onclick="copyImport('open-ai')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">open-ai</div>
+        </div>
+        <div class="icon-card" data-name="opera-mini" onclick="copyImport('opera-mini')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">opera-mini</div>
+        </div>
+        <div class="icon-card" data-name="oracle" onclick="copyImport('oracle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">oracle</div>
+        </div>
+        <div class="icon-card" data-name="outdent" onclick="copyImport('outdent')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">outdent</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-P">
+      <h2 class="letter-title">P</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="paddle" onclick="copyImport('paddle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">paddle</div>
+        </div>
+        <div class="icon-card" data-name="page-break-1" onclick="copyImport('page-break-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">page-break-1</div>
+        </div>
+        <div class="icon-card" data-name="pagination" onclick="copyImport('pagination')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pagination</div>
+        </div>
+        <div class="icon-card" data-name="paint-bucket" onclick="copyImport('paint-bucket')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">paint-bucket</div>
+        </div>
+        <div class="icon-card" data-name="paint-roller-1" onclick="copyImport('paint-roller-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">paint-roller-1</div>
+        </div>
+        <div class="icon-card" data-name="paperclip-1" onclick="copyImport('paperclip-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">paperclip-1</div>
+        </div>
+        <div class="icon-card" data-name="party-flags" onclick="copyImport('party-flags')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">party-flags</div>
+        </div>
+        <div class="icon-card" data-name="party-spray" onclick="copyImport('party-spray')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">party-spray</div>
+        </div>
+        <div class="icon-card" data-name="patreon" onclick="copyImport('patreon')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">patreon</div>
+        </div>
+        <div class="icon-card" data-name="pause" onclick="copyImport('pause')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pause</div>
+        </div>
+        <div class="icon-card" data-name="payoneer" onclick="copyImport('payoneer')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">payoneer</div>
+        </div>
+        <div class="icon-card" data-name="paypal" onclick="copyImport('paypal')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">paypal</div>
+        </div>
+        <div class="icon-card" data-name="pen-to-square" onclick="copyImport('pen-to-square')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pen-to-square</div>
+        </div>
+        <div class="icon-card" data-name="pencil-1" onclick="copyImport('pencil-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pencil-1</div>
+        </div>
+        <div class="icon-card" data-name="pepsi" onclick="copyImport('pepsi')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pepsi</div>
+        </div>
+        <div class="icon-card" data-name="phone" onclick="copyImport('phone')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">phone</div>
+        </div>
+        <div class="icon-card" data-name="photos" onclick="copyImport('photos')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">photos</div>
+        </div>
+        <div class="icon-card" data-name="php" onclick="copyImport('php')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">php</div>
+        </div>
+        <div class="icon-card" data-name="pie-chart-2" onclick="copyImport('pie-chart-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pie-chart-2</div>
+        </div>
+        <div class="icon-card" data-name="pilcrow" onclick="copyImport('pilcrow')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pilcrow</div>
+        </div>
+        <div class="icon-card" data-name="pimjo-logo" onclick="copyImport('pimjo-logo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pimjo-logo</div>
+        </div>
+        <div class="icon-card" data-name="pimjo-symbol" onclick="copyImport('pimjo-symbol')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pimjo-symbol</div>
+        </div>
+        <div class="icon-card" data-name="pinterest" onclick="copyImport('pinterest')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pinterest</div>
+        </div>
+        <div class="icon-card" data-name="pizza-2" onclick="copyImport('pizza-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pizza-2</div>
+        </div>
+        <div class="icon-card" data-name="placeholder-dollar" onclick="copyImport('placeholder-dollar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">placeholder-dollar</div>
+        </div>
+        <div class="icon-card" data-name="plantscale" onclick="copyImport('plantscale')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">plantscale</div>
+        </div>
+        <div class="icon-card" data-name="play" onclick="copyImport('play')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">play</div>
+        </div>
+        <div class="icon-card" data-name="play-store" onclick="copyImport('play-store')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">play-store</div>
+        </div>
+        <div class="icon-card" data-name="playstation" onclick="copyImport('playstation')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">playstation</div>
+        </div>
+        <div class="icon-card" data-name="plug-1" onclick="copyImport('plug-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">plug-1</div>
+        </div>
+        <div class="icon-card" data-name="plus" onclick="copyImport('plus')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">plus</div>
+        </div>
+        <div class="icon-card" data-name="plus-circle" onclick="copyImport('plus-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">plus-circle</div>
+        </div>
+        <div class="icon-card" data-name="pnpm" onclick="copyImport('pnpm')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pnpm</div>
+        </div>
+        <div class="icon-card" data-name="postgresql" onclick="copyImport('postgresql')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">postgresql</div>
+        </div>
+        <div class="icon-card" data-name="postman" onclick="copyImport('postman')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">postman</div>
+        </div>
+        <div class="icon-card" data-name="pound" onclick="copyImport('pound')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">pound</div>
+        </div>
+        <div class="icon-card" data-name="power-button" onclick="copyImport('power-button')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">power-button</div>
+        </div>
+        <div class="icon-card" data-name="previous-step-2" onclick="copyImport('previous-step-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">previous-step-2</div>
+        </div>
+        <div class="icon-card" data-name="printer" onclick="copyImport('printer')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">printer</div>
+        </div>
+        <div class="icon-card" data-name="prisma" onclick="copyImport('prisma')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">prisma</div>
+        </div>
+        <div class="icon-card" data-name="producthunt" onclick="copyImport('producthunt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">producthunt</div>
+        </div>
+        <div class="icon-card" data-name="proton-mail-logo" onclick="copyImport('proton-mail-logo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">proton-mail-logo</div>
+        </div>
+        <div class="icon-card" data-name="proton-mail-symbol" onclick="copyImport('proton-mail-symbol')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">proton-mail-symbol</div>
+        </div>
+        <div class="icon-card" data-name="python" onclick="copyImport('python')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">python</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-Q">
+      <h2 class="letter-title">Q</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="question-mark" onclick="copyImport('question-mark')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">question-mark</div>
+        </div>
+        <div class="icon-card" data-name="question-mark-circle" onclick="copyImport('question-mark-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">question-mark-circle</div>
+        </div>
+        <div class="icon-card" data-name="quora" onclick="copyImport('quora')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">quora</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-R">
+      <h2 class="letter-title">R</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="radis" onclick="copyImport('radis')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">radis</div>
+        </div>
+        <div class="icon-card" data-name="react" onclick="copyImport('react')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">react</div>
+        </div>
+        <div class="icon-card" data-name="reddit" onclick="copyImport('reddit')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">reddit</div>
+        </div>
+        <div class="icon-card" data-name="refresh-circle-1-clockwise" onclick="copyImport('refresh-circle-1-clockwise')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">refresh-circle-1-clockwise</div>
+        </div>
+        <div class="icon-card" data-name="refresh-dollar-1" onclick="copyImport('refresh-dollar-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">refresh-dollar-1</div>
+        </div>
+        <div class="icon-card" data-name="refresh-user-1" onclick="copyImport('refresh-user-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">refresh-user-1</div>
+        </div>
+        <div class="icon-card" data-name="remix-js" onclick="copyImport('remix-js')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">remix-js</div>
+        </div>
+        <div class="icon-card" data-name="road-1" onclick="copyImport('road-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">road-1</div>
+        </div>
+        <div class="icon-card" data-name="rocket-5" onclick="copyImport('rocket-5')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">rocket-5</div>
+        </div>
+        <div class="icon-card" data-name="route-1" onclick="copyImport('route-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">route-1</div>
+        </div>
+        <div class="icon-card" data-name="rss-right" onclick="copyImport('rss-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">rss-right</div>
+        </div>
+        <div class="icon-card" data-name="ruler-1" onclick="copyImport('ruler-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ruler-1</div>
+        </div>
+        <div class="icon-card" data-name="ruler-pen" onclick="copyImport('ruler-pen')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ruler-pen</div>
+        </div>
+        <div class="icon-card" data-name="rupee" onclick="copyImport('rupee')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">rupee</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-S">
+      <h2 class="letter-title">S</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="safari" onclick="copyImport('safari')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">safari</div>
+        </div>
+        <div class="icon-card" data-name="sanity" onclick="copyImport('sanity')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sanity</div>
+        </div>
+        <div class="icon-card" data-name="school-bench-1" onclick="copyImport('school-bench-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">school-bench-1</div>
+        </div>
+        <div class="icon-card" data-name="school-bench-2" onclick="copyImport('school-bench-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">school-bench-2</div>
+        </div>
+        <div class="icon-card" data-name="scissors-1-vertical" onclick="copyImport('scissors-1-vertical')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">scissors-1-vertical</div>
+        </div>
+        <div class="icon-card" data-name="scoter" onclick="copyImport('scoter')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">scoter</div>
+        </div>
+        <div class="icon-card" data-name="scroll-down-2" onclick="copyImport('scroll-down-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">scroll-down-2</div>
+        </div>
+        <div class="icon-card" data-name="search-1" onclick="copyImport('search-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">search-1</div>
+        </div>
+        <div class="icon-card" data-name="search-2" onclick="copyImport('search-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">search-2</div>
+        </div>
+        <div class="icon-card" data-name="search-minus" onclick="copyImport('search-minus')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">search-minus</div>
+        </div>
+        <div class="icon-card" data-name="search-plus" onclick="copyImport('search-plus')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">search-plus</div>
+        </div>
+        <div class="icon-card" data-name="search-text" onclick="copyImport('search-text')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">search-text</div>
+        </div>
+        <div class="icon-card" data-name="select-cursor-1" onclick="copyImport('select-cursor-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">select-cursor-1</div>
+        </div>
+        <div class="icon-card" data-name="seo-monitor" onclick="copyImport('seo-monitor')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">seo-monitor</div>
+        </div>
+        <div class="icon-card" data-name="service-bell-1" onclick="copyImport('service-bell-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">service-bell-1</div>
+        </div>
+        <div class="icon-card" data-name="share-1" onclick="copyImport('share-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">share-1</div>
+        </div>
+        <div class="icon-card" data-name="share-1-circle" onclick="copyImport('share-1-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">share-1-circle</div>
+        </div>
+        <div class="icon-card" data-name="share-2" onclick="copyImport('share-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">share-2</div>
+        </div>
+        <div class="icon-card" data-name="shield-2" onclick="copyImport('shield-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shield-2</div>
+        </div>
+        <div class="icon-card" data-name="shield-2-check" onclick="copyImport('shield-2-check')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shield-2-check</div>
+        </div>
+        <div class="icon-card" data-name="shield-dollar" onclick="copyImport('shield-dollar')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shield-dollar</div>
+        </div>
+        <div class="icon-card" data-name="shift-left" onclick="copyImport('shift-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shift-left</div>
+        </div>
+        <div class="icon-card" data-name="shift-right" onclick="copyImport('shift-right')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shift-right</div>
+        </div>
+        <div class="icon-card" data-name="ship-1" onclick="copyImport('ship-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ship-1</div>
+        </div>
+        <div class="icon-card" data-name="shirt-1" onclick="copyImport('shirt-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shirt-1</div>
+        </div>
+        <div class="icon-card" data-name="shopify" onclick="copyImport('shopify')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shopify</div>
+        </div>
+        <div class="icon-card" data-name="shovel" onclick="copyImport('shovel')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shovel</div>
+        </div>
+        <div class="icon-card" data-name="shuffle" onclick="copyImport('shuffle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">shuffle</div>
+        </div>
+        <div class="icon-card" data-name="sign-post-left" onclick="copyImport('sign-post-left')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sign-post-left</div>
+        </div>
+        <div class="icon-card" data-name="signal-app" onclick="copyImport('signal-app')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">signal-app</div>
+        </div>
+        <div class="icon-card" data-name="signs-post-2" onclick="copyImport('signs-post-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">signs-post-2</div>
+        </div>
+        <div class="icon-card" data-name="sketch" onclick="copyImport('sketch')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sketch</div>
+        </div>
+        <div class="icon-card" data-name="skype" onclick="copyImport('skype')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">skype</div>
+        </div>
+        <div class="icon-card" data-name="slack" onclick="copyImport('slack')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">slack</div>
+        </div>
+        <div class="icon-card" data-name="slice-2" onclick="copyImport('slice-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">slice-2</div>
+        </div>
+        <div class="icon-card" data-name="sliders-horizontal-square-2" onclick="copyImport('sliders-horizontal-square-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sliders-horizontal-square-2</div>
+        </div>
+        <div class="icon-card" data-name="slideshare" onclick="copyImport('slideshare')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">slideshare</div>
+        </div>
+        <div class="icon-card" data-name="snapchat" onclick="copyImport('snapchat')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">snapchat</div>
+        </div>
+        <div class="icon-card" data-name="sort-alphabetical" onclick="copyImport('sort-alphabetical')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sort-alphabetical</div>
+        </div>
+        <div class="icon-card" data-name="sort-high-to-low" onclick="copyImport('sort-high-to-low')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sort-high-to-low</div>
+        </div>
+        <div class="icon-card" data-name="soundcloud" onclick="copyImport('soundcloud')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">soundcloud</div>
+        </div>
+        <div class="icon-card" data-name="spacex" onclick="copyImport('spacex')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spacex</div>
+        </div>
+        <div class="icon-card" data-name="spellcheck" onclick="copyImport('spellcheck')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spellcheck</div>
+        </div>
+        <div class="icon-card" data-name="spinner-2-sacle" onclick="copyImport('spinner-2-sacle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spinner-2-sacle</div>
+        </div>
+        <div class="icon-card" data-name="spinner-3" onclick="copyImport('spinner-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spinner-3</div>
+        </div>
+        <div class="icon-card" data-name="sports" onclick="copyImport('sports')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sports</div>
+        </div>
+        <div class="icon-card" data-name="spotify" onclick="copyImport('spotify')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spotify</div>
+        </div>
+        <div class="icon-card" data-name="spotify-alt" onclick="copyImport('spotify-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">spotify-alt</div>
+        </div>
+        <div class="icon-card" data-name="squarespace" onclick="copyImport('squarespace')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">squarespace</div>
+        </div>
+        <div class="icon-card" data-name="stackoverflow" onclick="copyImport('stackoverflow')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stackoverflow</div>
+        </div>
+        <div class="icon-card" data-name="stamp" onclick="copyImport('stamp')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stamp</div>
+        </div>
+        <div class="icon-card" data-name="star-fat" onclick="copyImport('star-fat')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">star-fat</div>
+        </div>
+        <div class="icon-card" data-name="star-fat-half-2" onclick="copyImport('star-fat-half-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">star-fat-half-2</div>
+        </div>
+        <div class="icon-card" data-name="star-sharp-disabled" onclick="copyImport('star-sharp-disabled')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">star-sharp-disabled</div>
+        </div>
+        <div class="icon-card" data-name="statista" onclick="copyImport('statista')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">statista</div>
+        </div>
+        <div class="icon-card" data-name="steam" onclick="copyImport('steam')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">steam</div>
+        </div>
+        <div class="icon-card" data-name="stethoscope-1" onclick="copyImport('stethoscope-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stethoscope-1</div>
+        </div>
+        <div class="icon-card" data-name="stopwatch" onclick="copyImport('stopwatch')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stopwatch</div>
+        </div>
+        <div class="icon-card" data-name="storage-hdd-2" onclick="copyImport('storage-hdd-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">storage-hdd-2</div>
+        </div>
+        <div class="icon-card" data-name="strikethrough-1" onclick="copyImport('strikethrough-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">strikethrough-1</div>
+        </div>
+        <div class="icon-card" data-name="stripe" onclick="copyImport('stripe')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stripe</div>
+        </div>
+        <div class="icon-card" data-name="stumbleupon" onclick="copyImport('stumbleupon')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">stumbleupon</div>
+        </div>
+        <div class="icon-card" data-name="sun-1" onclick="copyImport('sun-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">sun-1</div>
+        </div>
+        <div class="icon-card" data-name="supabase" onclick="copyImport('supabase')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">supabase</div>
+        </div>
+        <div class="icon-card" data-name="surfboard-2" onclick="copyImport('surfboard-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">surfboard-2</div>
+        </div>
+        <div class="icon-card" data-name="svelte" onclick="copyImport('svelte')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">svelte</div>
+        </div>
+        <div class="icon-card" data-name="swift" onclick="copyImport('swift')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">swift</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-T">
+      <h2 class="letter-title">T</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="tab" onclick="copyImport('tab')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tab</div>
+        </div>
+        <div class="icon-card" data-name="tailwindcss" onclick="copyImport('tailwindcss')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tailwindcss</div>
+        </div>
+        <div class="icon-card" data-name="target-user" onclick="copyImport('target-user')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">target-user</div>
+        </div>
+        <div class="icon-card" data-name="telegram" onclick="copyImport('telegram')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">telegram</div>
+        </div>
+        <div class="icon-card" data-name="telephone-1" onclick="copyImport('telephone-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">telephone-1</div>
+        </div>
+        <div class="icon-card" data-name="telephone-3" onclick="copyImport('telephone-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">telephone-3</div>
+        </div>
+        <div class="icon-card" data-name="tesla" onclick="copyImport('tesla')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tesla</div>
+        </div>
+        <div class="icon-card" data-name="text-format" onclick="copyImport('text-format')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">text-format</div>
+        </div>
+        <div class="icon-card" data-name="text-format-remove" onclick="copyImport('text-format-remove')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">text-format-remove</div>
+        </div>
+        <div class="icon-card" data-name="text-paragraph" onclick="copyImport('text-paragraph')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">text-paragraph</div>
+        </div>
+        <div class="icon-card" data-name="thumbs-down-3" onclick="copyImport('thumbs-down-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">thumbs-down-3</div>
+        </div>
+        <div class="icon-card" data-name="thumbs-up-3" onclick="copyImport('thumbs-up-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">thumbs-up-3</div>
+        </div>
+        <div class="icon-card" data-name="ticket-1" onclick="copyImport('ticket-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ticket-1</div>
+        </div>
+        <div class="icon-card" data-name="tickets-3" onclick="copyImport('tickets-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tickets-3</div>
+        </div>
+        <div class="icon-card" data-name="tiktok" onclick="copyImport('tiktok')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tiktok</div>
+        </div>
+        <div class="icon-card" data-name="tiktok-alt" onclick="copyImport('tiktok-alt')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tiktok-alt</div>
+        </div>
+        <div class="icon-card" data-name="tower-broadcast-1" onclick="copyImport('tower-broadcast-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tower-broadcast-1</div>
+        </div>
+        <div class="icon-card" data-name="toyota" onclick="copyImport('toyota')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">toyota</div>
+        </div>
+        <div class="icon-card" data-name="train-1" onclick="copyImport('train-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">train-1</div>
+        </div>
+        <div class="icon-card" data-name="train-3" onclick="copyImport('train-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">train-3</div>
+        </div>
+        <div class="icon-card" data-name="trash-3" onclick="copyImport('trash-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trash-3</div>
+        </div>
+        <div class="icon-card" data-name="tree-2" onclick="copyImport('tree-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tree-2</div>
+        </div>
+        <div class="icon-card" data-name="trees-3" onclick="copyImport('trees-3')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trees-3</div>
+        </div>
+        <div class="icon-card" data-name="trello" onclick="copyImport('trello')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trello</div>
+        </div>
+        <div class="icon-card" data-name="trend-down-1" onclick="copyImport('trend-down-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trend-down-1</div>
+        </div>
+        <div class="icon-card" data-name="trend-up-1" onclick="copyImport('trend-up-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trend-up-1</div>
+        </div>
+        <div class="icon-card" data-name="trophy-1" onclick="copyImport('trophy-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trophy-1</div>
+        </div>
+        <div class="icon-card" data-name="trowel-1" onclick="copyImport('trowel-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">trowel-1</div>
+        </div>
+        <div class="icon-card" data-name="truck-delivery-1" onclick="copyImport('truck-delivery-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">truck-delivery-1</div>
+        </div>
+        <div class="icon-card" data-name="tumblr" onclick="copyImport('tumblr')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">tumblr</div>
+        </div>
+        <div class="icon-card" data-name="turborepo" onclick="copyImport('turborepo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">turborepo</div>
+        </div>
+        <div class="icon-card" data-name="twitch" onclick="copyImport('twitch')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">twitch</div>
+        </div>
+        <div class="icon-card" data-name="twitter-old" onclick="copyImport('twitter-old')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">twitter-old</div>
+        </div>
+        <div class="icon-card" data-name="typescript" onclick="copyImport('typescript')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">typescript</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-U">
+      <h2 class="letter-title">U</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="uber" onclick="copyImport('uber')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">uber</div>
+        </div>
+        <div class="icon-card" data-name="uber-symbol" onclick="copyImport('uber-symbol')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">uber-symbol</div>
+        </div>
+        <div class="icon-card" data-name="ubuntu" onclick="copyImport('ubuntu')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ubuntu</div>
+        </div>
+        <div class="icon-card" data-name="underline" onclick="copyImport('underline')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">underline</div>
+        </div>
+        <div class="icon-card" data-name="unlink-2-angular-eft" onclick="copyImport('unlink-2-angular-eft')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">unlink-2-angular-eft</div>
+        </div>
+        <div class="icon-card" data-name="unlocked-2" onclick="copyImport('unlocked-2')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">unlocked-2</div>
+        </div>
+        <div class="icon-card" data-name="unsplash" onclick="copyImport('unsplash')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">unsplash</div>
+        </div>
+        <div class="icon-card" data-name="upload-1" onclick="copyImport('upload-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">upload-1</div>
+        </div>
+        <div class="icon-card" data-name="upload-circle-1" onclick="copyImport('upload-circle-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">upload-circle-1</div>
+        </div>
+        <div class="icon-card" data-name="user-4" onclick="copyImport('user-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">user-4</div>
+        </div>
+        <div class="icon-card" data-name="user-multiple-4" onclick="copyImport('user-multiple-4')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">user-multiple-4</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-V">
+      <h2 class="letter-title">V</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="vector-nodes-6" onclick="copyImport('vector-nodes-6')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vector-nodes-6</div>
+        </div>
+        <div class="icon-card" data-name="vector-nodes-7" onclick="copyImport('vector-nodes-7')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vector-nodes-7</div>
+        </div>
+        <div class="icon-card" data-name="vercel" onclick="copyImport('vercel')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vercel</div>
+        </div>
+        <div class="icon-card" data-name="vimeo" onclick="copyImport('vimeo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vimeo</div>
+        </div>
+        <div class="icon-card" data-name="visa" onclick="copyImport('visa')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">visa</div>
+        </div>
+        <div class="icon-card" data-name="vite" onclick="copyImport('vite')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vite</div>
+        </div>
+        <div class="icon-card" data-name="vk" onclick="copyImport('vk')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vk</div>
+        </div>
+        <div class="icon-card" data-name="vmware" onclick="copyImport('vmware')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vmware</div>
+        </div>
+        <div class="icon-card" data-name="volkswagen" onclick="copyImport('volkswagen')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volkswagen</div>
+        </div>
+        <div class="icon-card" data-name="volume-1" onclick="copyImport('volume-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volume-1</div>
+        </div>
+        <div class="icon-card" data-name="volume-high" onclick="copyImport('volume-high')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volume-high</div>
+        </div>
+        <div class="icon-card" data-name="volume-low" onclick="copyImport('volume-low')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volume-low</div>
+        </div>
+        <div class="icon-card" data-name="volume-mute" onclick="copyImport('volume-mute')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volume-mute</div>
+        </div>
+        <div class="icon-card" data-name="volume-off" onclick="copyImport('volume-off')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">volume-off</div>
+        </div>
+        <div class="icon-card" data-name="vs-code" onclick="copyImport('vs-code')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vs-code</div>
+        </div>
+        <div class="icon-card" data-name="vuejs" onclick="copyImport('vuejs')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">vuejs</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-W">
+      <h2 class="letter-title">W</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="wallet-1" onclick="copyImport('wallet-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wallet-1</div>
+        </div>
+        <div class="icon-card" data-name="watch-beat-1" onclick="copyImport('watch-beat-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">watch-beat-1</div>
+        </div>
+        <div class="icon-card" data-name="water-drop-1" onclick="copyImport('water-drop-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">water-drop-1</div>
+        </div>
+        <div class="icon-card" data-name="webflow" onclick="copyImport('webflow')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">webflow</div>
+        </div>
+        <div class="icon-card" data-name="webhooks" onclick="copyImport('webhooks')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">webhooks</div>
+        </div>
+        <div class="icon-card" data-name="wechat" onclick="copyImport('wechat')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wechat</div>
+        </div>
+        <div class="icon-card" data-name="weight-machine-1" onclick="copyImport('weight-machine-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">weight-machine-1</div>
+        </div>
+        <div class="icon-card" data-name="whatsapp" onclick="copyImport('whatsapp')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">whatsapp</div>
+        </div>
+        <div class="icon-card" data-name="wheelbarrow-empty" onclick="copyImport('wheelbarrow-empty')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wheelbarrow-empty</div>
+        </div>
+        <div class="icon-card" data-name="wheelchair-1" onclick="copyImport('wheelchair-1')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wheelchair-1</div>
+        </div>
+        <div class="icon-card" data-name="windows" onclick="copyImport('windows')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">windows</div>
+        </div>
+        <div class="icon-card" data-name="wise" onclick="copyImport('wise')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wise</div>
+        </div>
+        <div class="icon-card" data-name="wordpress" onclick="copyImport('wordpress')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">wordpress</div>
+        </div>
+        <div class="icon-card" data-name="www" onclick="copyImport('www')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">www</div>
+        </div>
+        <div class="icon-card" data-name="www-cursor" onclick="copyImport('www-cursor')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">www-cursor</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-X">
+      <h2 class="letter-title">X</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="x" onclick="copyImport('x')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">x</div>
+        </div>
+        <div class="icon-card" data-name="xampp" onclick="copyImport('xampp')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">xampp</div>
+        </div>
+        <div class="icon-card" data-name="xbox" onclick="copyImport('xbox')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">xbox</div>
+        </div>
+        <div class="icon-card" data-name="xmark" onclick="copyImport('xmark')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">xmark</div>
+        </div>
+        <div class="icon-card" data-name="xmark-circle" onclick="copyImport('xmark-circle')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">xmark-circle</div>
+        </div>
+        <div class="icon-card" data-name="xrp" onclick="copyImport('xrp')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">xrp</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-Y">
+      <h2 class="letter-title">Y</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="yahoo" onclick="copyImport('yahoo')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">yahoo</div>
+        </div>
+        <div class="icon-card" data-name="yarn" onclick="copyImport('yarn')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">yarn</div>
+        </div>
+        <div class="icon-card" data-name="ycombinator" onclick="copyImport('ycombinator')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">ycombinator</div>
+        </div>
+        <div class="icon-card" data-name="yen" onclick="copyImport('yen')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">yen</div>
+        </div>
+        <div class="icon-card" data-name="youtube" onclick="copyImport('youtube')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">youtube</div>
+        </div>
+        <div class="icon-card" data-name="youtube-kids" onclick="copyImport('youtube-kids')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">youtube-kids</div>
+        </div>
+        <div class="icon-card" data-name="youtube-music" onclick="copyImport('youtube-music')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">youtube-music</div>
+        </div>
+      </div>
+    </div>
+    <div class="letter-section" id="section-Z">
+      <h2 class="letter-title">Z</h2>
+      <div class="icon-grid">
+        <div class="icon-card" data-name="zapier" onclick="copyImport('zapier')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">zapier</div>
+        </div>
+        <div class="icon-card" data-name="zero-size" onclick="copyImport('zero-size')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">zero-size</div>
+        </div>
+        <div class="icon-card" data-name="zoom" onclick="copyImport('zoom')">
+          <div class="icon-placeholder">📦</div>
+          <div class="icon-name">zoom</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Copied!</div>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const iconContainer = document.getElementById('iconContainer');
+    const letterNav = document.getElementById('letterNav');
+    const toast = document.getElementById('toast');
+    
+    searchInput.addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase();
+      const cards = document.querySelectorAll('.icon-card');
+      const sections = document.querySelectorAll('.letter-section');
+      
+      if (query === '') {
+        cards.forEach(card => card.classList.remove('hidden'));
+        sections.forEach(section => section.classList.remove('hidden'));
+        letterNav.classList.remove('hidden');
+        return;
+      }
+      
+      letterNav.classList.add('hidden');
+      
+      cards.forEach(card => {
+        const name = card.dataset.name;
+        if (name.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      
+      // Hide empty sections
+      sections.forEach(section => {
+        const visibleCards = section.querySelectorAll('.icon-card:not(.hidden)');
+        if (visibleCards.length === 0) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+        }
+      });
+    });
+    
+    function copyImport(iconName) {
+      const importStatement = `import { ${iconName} } from 'lineicons-svelte';`;
+      navigator.clipboard.writeText(importStatement).then(() => {
+        toast.textContent = `Copied: ${iconName}`;
+        toast.classList.add('show');
+        
+        // Highlight card
+        event.currentTarget.classList.add('copied');
+        
+        setTimeout(() => {
+          toast.classList.remove('show');
+          event.currentTarget.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

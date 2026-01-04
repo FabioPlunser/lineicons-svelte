@@ -1,0 +1,3038 @@
+{
+  "name": "lineicons-svelte",
+  "version": "1.0.0",
+  "totalIcons": 606,
+  "generatedAt": "2026-01-04T10:19:18.174Z",
+  "icons": [
+    {
+      "name": "500px",
+      "import": "import { 500px } from 'lineicons-svelte';",
+      "component": "<500px />"
+    },
+    {
+      "name": "adobe",
+      "import": "import { adobe } from 'lineicons-svelte';",
+      "component": "<adobe />"
+    },
+    {
+      "name": "adonis",
+      "import": "import { adonis } from 'lineicons-svelte';",
+      "component": "<adonis />"
+    },
+    {
+      "name": "aeroplane-1",
+      "import": "import { aeroplane-1 } from 'lineicons-svelte';",
+      "component": "<aeroplane-1 />"
+    },
+    {
+      "name": "agenda",
+      "import": "import { agenda } from 'lineicons-svelte';",
+      "component": "<agenda />"
+    },
+    {
+      "name": "airbnb",
+      "import": "import { airbnb } from 'lineicons-svelte';",
+      "component": "<airbnb />"
+    },
+    {
+      "name": "airtable",
+      "import": "import { airtable } from 'lineicons-svelte';",
+      "component": "<airtable />"
+    },
+    {
+      "name": "alarm-1",
+      "import": "import { alarm-1 } from 'lineicons-svelte';",
+      "component": "<alarm-1 />"
+    },
+    {
+      "name": "align-text-center",
+      "import": "import { align-text-center } from 'lineicons-svelte';",
+      "component": "<align-text-center />"
+    },
+    {
+      "name": "align-text-left",
+      "import": "import { align-text-left } from 'lineicons-svelte';",
+      "component": "<align-text-left />"
+    },
+    {
+      "name": "align-text-right",
+      "import": "import { align-text-right } from 'lineicons-svelte';",
+      "component": "<align-text-right />"
+    },
+    {
+      "name": "alpinejs",
+      "import": "import { alpinejs } from 'lineicons-svelte';",
+      "component": "<alpinejs />"
+    },
+    {
+      "name": "amazon",
+      "import": "import { amazon } from 'lineicons-svelte';",
+      "component": "<amazon />"
+    },
+    {
+      "name": "amazon-original",
+      "import": "import { amazon-original } from 'lineicons-svelte';",
+      "component": "<amazon-original />"
+    },
+    {
+      "name": "amazon-pay",
+      "import": "import { amazon-pay } from 'lineicons-svelte';",
+      "component": "<amazon-pay />"
+    },
+    {
+      "name": "ambulance-1",
+      "import": "import { ambulance-1 } from 'lineicons-svelte';",
+      "component": "<ambulance-1 />"
+    },
+    {
+      "name": "amd",
+      "import": "import { amd } from 'lineicons-svelte';",
+      "component": "<amd />"
+    },
+    {
+      "name": "amex",
+      "import": "import { amex } from 'lineicons-svelte';",
+      "component": "<amex />"
+    },
+    {
+      "name": "anchor",
+      "import": "import { anchor } from 'lineicons-svelte';",
+      "component": "<anchor />"
+    },
+    {
+      "name": "android",
+      "import": "import { android } from 'lineicons-svelte';",
+      "component": "<android />"
+    },
+    {
+      "name": "android-old",
+      "import": "import { android-old } from 'lineicons-svelte';",
+      "component": "<android-old />"
+    },
+    {
+      "name": "angellist",
+      "import": "import { angellist } from 'lineicons-svelte';",
+      "component": "<angellist />"
+    },
+    {
+      "name": "angle-double-down",
+      "import": "import { angle-double-down } from 'lineicons-svelte';",
+      "component": "<angle-double-down />"
+    },
+    {
+      "name": "angle-double-left",
+      "import": "import { angle-double-left } from 'lineicons-svelte';",
+      "component": "<angle-double-left />"
+    },
+    {
+      "name": "angle-double-right",
+      "import": "import { angle-double-right } from 'lineicons-svelte';",
+      "component": "<angle-double-right />"
+    },
+    {
+      "name": "angle-double-up",
+      "import": "import { angle-double-up } from 'lineicons-svelte';",
+      "component": "<angle-double-up />"
+    },
+    {
+      "name": "angular",
+      "import": "import { angular } from 'lineicons-svelte';",
+      "component": "<angular />"
+    },
+    {
+      "name": "app-store",
+      "import": "import { app-store } from 'lineicons-svelte';",
+      "component": "<app-store />"
+    },
+    {
+      "name": "apple-brand",
+      "import": "import { apple-brand } from 'lineicons-svelte';",
+      "component": "<apple-brand />"
+    },
+    {
+      "name": "apple-music",
+      "import": "import { apple-music } from 'lineicons-svelte';",
+      "component": "<apple-music />"
+    },
+    {
+      "name": "apple-music-alt",
+      "import": "import { apple-music-alt } from 'lineicons-svelte';",
+      "component": "<apple-music-alt />"
+    },
+    {
+      "name": "apple-pay",
+      "import": "import { apple-pay } from 'lineicons-svelte';",
+      "component": "<apple-pay />"
+    },
+    {
+      "name": "arc-browser",
+      "import": "import { arc-browser } from 'lineicons-svelte';",
+      "component": "<arc-browser />"
+    },
+    {
+      "name": "arrow-all-direction",
+      "import": "import { arrow-all-direction } from 'lineicons-svelte';",
+      "component": "<arrow-all-direction />"
+    },
+    {
+      "name": "arrow-angular-top-left",
+      "import": "import { arrow-angular-top-left } from 'lineicons-svelte';",
+      "component": "<arrow-angular-top-left />"
+    },
+    {
+      "name": "arrow-angular-top-right",
+      "import": "import { arrow-angular-top-right } from 'lineicons-svelte';",
+      "component": "<arrow-angular-top-right />"
+    },
+    {
+      "name": "arrow-both-direction-horizontal-1",
+      "import": "import { arrow-both-direction-horizontal-1 } from 'lineicons-svelte';",
+      "component": "<arrow-both-direction-horizontal-1 />"
+    },
+    {
+      "name": "arrow-both-direction-vertical-1",
+      "import": "import { arrow-both-direction-vertical-1 } from 'lineicons-svelte';",
+      "component": "<arrow-both-direction-vertical-1 />"
+    },
+    {
+      "name": "arrow-downward",
+      "import": "import { arrow-downward } from 'lineicons-svelte';",
+      "component": "<arrow-downward />"
+    },
+    {
+      "name": "arrow-left",
+      "import": "import { arrow-left } from 'lineicons-svelte';",
+      "component": "<arrow-left />"
+    },
+    {
+      "name": "arrow-left-circle",
+      "import": "import { arrow-left-circle } from 'lineicons-svelte';",
+      "component": "<arrow-left-circle />"
+    },
+    {
+      "name": "arrow-right",
+      "import": "import { arrow-right } from 'lineicons-svelte';",
+      "component": "<arrow-right />"
+    },
+    {
+      "name": "arrow-right-circle",
+      "import": "import { arrow-right-circle } from 'lineicons-svelte';",
+      "component": "<arrow-right-circle />"
+    },
+    {
+      "name": "arrow-upward",
+      "import": "import { arrow-upward } from 'lineicons-svelte';",
+      "component": "<arrow-upward />"
+    },
+    {
+      "name": "asana",
+      "import": "import { asana } from 'lineicons-svelte';",
+      "component": "<asana />"
+    },
+    {
+      "name": "astro",
+      "import": "import { astro } from 'lineicons-svelte';",
+      "component": "<astro />"
+    },
+    {
+      "name": "atlassian",
+      "import": "import { atlassian } from 'lineicons-svelte';",
+      "component": "<atlassian />"
+    },
+    {
+      "name": "audi",
+      "import": "import { audi } from 'lineicons-svelte';",
+      "component": "<audi />"
+    },
+    {
+      "name": "audi-alt",
+      "import": "import { audi-alt } from 'lineicons-svelte';",
+      "component": "<audi-alt />"
+    },
+    {
+      "name": "aws",
+      "import": "import { aws } from 'lineicons-svelte';",
+      "component": "<aws />"
+    },
+    {
+      "name": "azure",
+      "import": "import { azure } from 'lineicons-svelte';",
+      "component": "<azure />"
+    },
+    {
+      "name": "badge-decagram-percent",
+      "import": "import { badge-decagram-percent } from 'lineicons-svelte';",
+      "component": "<badge-decagram-percent />"
+    },
+    {
+      "name": "balloons",
+      "import": "import { balloons } from 'lineicons-svelte';",
+      "component": "<balloons />"
+    },
+    {
+      "name": "ban-2",
+      "import": "import { ban-2 } from 'lineicons-svelte';",
+      "component": "<ban-2 />"
+    },
+    {
+      "name": "bar-chart-4",
+      "import": "import { bar-chart-4 } from 'lineicons-svelte';",
+      "component": "<bar-chart-4 />"
+    },
+    {
+      "name": "bar-chart-dollar",
+      "import": "import { bar-chart-dollar } from 'lineicons-svelte';",
+      "component": "<bar-chart-dollar />"
+    },
+    {
+      "name": "basket-shopping-3",
+      "import": "import { basket-shopping-3 } from 'lineicons-svelte';",
+      "component": "<basket-shopping-3 />"
+    },
+    {
+      "name": "beat",
+      "import": "import { beat } from 'lineicons-svelte';",
+      "component": "<beat />"
+    },
+    {
+      "name": "behance",
+      "import": "import { behance } from 'lineicons-svelte';",
+      "component": "<behance />"
+    },
+    {
+      "name": "bell-1",
+      "import": "import { bell-1 } from 'lineicons-svelte';",
+      "component": "<bell-1 />"
+    },
+    {
+      "name": "bike",
+      "import": "import { bike } from 'lineicons-svelte';",
+      "component": "<bike />"
+    },
+    {
+      "name": "bing",
+      "import": "import { bing } from 'lineicons-svelte';",
+      "component": "<bing />"
+    },
+    {
+      "name": "bitbucket",
+      "import": "import { bitbucket } from 'lineicons-svelte';",
+      "component": "<bitbucket />"
+    },
+    {
+      "name": "bitcoin",
+      "import": "import { bitcoin } from 'lineicons-svelte';",
+      "component": "<bitcoin />"
+    },
+    {
+      "name": "bittorrent",
+      "import": "import { bittorrent } from 'lineicons-svelte';",
+      "component": "<bittorrent />"
+    },
+    {
+      "name": "blogger",
+      "import": "import { blogger } from 'lineicons-svelte';",
+      "component": "<blogger />"
+    },
+    {
+      "name": "blogger-alt",
+      "import": "import { blogger-alt } from 'lineicons-svelte';",
+      "component": "<blogger-alt />"
+    },
+    {
+      "name": "bluetooth",
+      "import": "import { bluetooth } from 'lineicons-svelte';",
+      "component": "<bluetooth />"
+    },
+    {
+      "name": "bluetooth-logo",
+      "import": "import { bluetooth-logo } from 'lineicons-svelte';",
+      "component": "<bluetooth-logo />"
+    },
+    {
+      "name": "bmw",
+      "import": "import { bmw } from 'lineicons-svelte';",
+      "component": "<bmw />"
+    },
+    {
+      "name": "board-writing-3",
+      "import": "import { board-writing-3 } from 'lineicons-svelte';",
+      "component": "<board-writing-3 />"
+    },
+    {
+      "name": "bold",
+      "import": "import { bold } from 'lineicons-svelte';",
+      "component": "<bold />"
+    },
+    {
+      "name": "bolt-2",
+      "import": "import { bolt-2 } from 'lineicons-svelte';",
+      "component": "<bolt-2 />"
+    },
+    {
+      "name": "bolt-3",
+      "import": "import { bolt-3 } from 'lineicons-svelte';",
+      "component": "<bolt-3 />"
+    },
+    {
+      "name": "book-1",
+      "import": "import { book-1 } from 'lineicons-svelte';",
+      "component": "<book-1 />"
+    },
+    {
+      "name": "bookmark-1",
+      "import": "import { bookmark-1 } from 'lineicons-svelte';",
+      "component": "<bookmark-1 />"
+    },
+    {
+      "name": "bookmark-circle",
+      "import": "import { bookmark-circle } from 'lineicons-svelte';",
+      "component": "<bookmark-circle />"
+    },
+    {
+      "name": "books-2",
+      "import": "import { books-2 } from 'lineicons-svelte';",
+      "component": "<books-2 />"
+    },
+    {
+      "name": "bootstrap-5",
+      "import": "import { bootstrap-5 } from 'lineicons-svelte';",
+      "component": "<bootstrap-5 />"
+    },
+    {
+      "name": "bootstrap-5-square",
+      "import": "import { bootstrap-5-square } from 'lineicons-svelte';",
+      "component": "<bootstrap-5-square />"
+    },
+    {
+      "name": "box-archive-1",
+      "import": "import { box-archive-1 } from 'lineicons-svelte';",
+      "component": "<box-archive-1 />"
+    },
+    {
+      "name": "box-closed",
+      "import": "import { box-closed } from 'lineicons-svelte';",
+      "component": "<box-closed />"
+    },
+    {
+      "name": "box-gift-1",
+      "import": "import { box-gift-1 } from 'lineicons-svelte';",
+      "component": "<box-gift-1 />"
+    },
+    {
+      "name": "brave",
+      "import": "import { brave } from 'lineicons-svelte';",
+      "component": "<brave />"
+    },
+    {
+      "name": "bricks",
+      "import": "import { bricks } from 'lineicons-svelte';",
+      "component": "<bricks />"
+    },
+    {
+      "name": "bridge-3",
+      "import": "import { bridge-3 } from 'lineicons-svelte';",
+      "component": "<bridge-3 />"
+    },
+    {
+      "name": "briefcase-1",
+      "import": "import { briefcase-1 } from 'lineicons-svelte';",
+      "component": "<briefcase-1 />"
+    },
+    {
+      "name": "briefcase-2",
+      "import": "import { briefcase-2 } from 'lineicons-svelte';",
+      "component": "<briefcase-2 />"
+    },
+    {
+      "name": "briefcase-plus-1",
+      "import": "import { briefcase-plus-1 } from 'lineicons-svelte';",
+      "component": "<briefcase-plus-1 />"
+    },
+    {
+      "name": "brush-1-rotated",
+      "import": "import { brush-1-rotated } from 'lineicons-svelte';",
+      "component": "<brush-1-rotated />"
+    },
+    {
+      "name": "brush-2",
+      "import": "import { brush-2 } from 'lineicons-svelte';",
+      "component": "<brush-2 />"
+    },
+    {
+      "name": "btc",
+      "import": "import { btc } from 'lineicons-svelte';",
+      "component": "<btc />"
+    },
+    {
+      "name": "bug-1",
+      "import": "import { bug-1 } from 'lineicons-svelte';",
+      "component": "<bug-1 />"
+    },
+    {
+      "name": "buildings-1",
+      "import": "import { buildings-1 } from 'lineicons-svelte';",
+      "component": "<buildings-1 />"
+    },
+    {
+      "name": "bulb-2",
+      "import": "import { bulb-2 } from 'lineicons-svelte';",
+      "component": "<bulb-2 />"
+    },
+    {
+      "name": "bulb-4",
+      "import": "import { bulb-4 } from 'lineicons-svelte';",
+      "component": "<bulb-4 />"
+    },
+    {
+      "name": "burger-1",
+      "import": "import { burger-1 } from 'lineicons-svelte';",
+      "component": "<burger-1 />"
+    },
+    {
+      "name": "burger-drink",
+      "import": "import { burger-drink } from 'lineicons-svelte';",
+      "component": "<burger-drink />"
+    },
+    {
+      "name": "bus-1",
+      "import": "import { bus-1 } from 'lineicons-svelte';",
+      "component": "<bus-1 />"
+    },
+    {
+      "name": "busket-ball",
+      "import": "import { busket-ball } from 'lineicons-svelte';",
+      "component": "<busket-ball />"
+    },
+    {
+      "name": "cake-1",
+      "import": "import { cake-1 } from 'lineicons-svelte';",
+      "component": "<cake-1 />"
+    },
+    {
+      "name": "calculator-1",
+      "import": "import { calculator-1 } from 'lineicons-svelte';",
+      "component": "<calculator-1 />"
+    },
+    {
+      "name": "calculator-2",
+      "import": "import { calculator-2 } from 'lineicons-svelte';",
+      "component": "<calculator-2 />"
+    },
+    {
+      "name": "calendar-days",
+      "import": "import { calendar-days } from 'lineicons-svelte';",
+      "component": "<calendar-days />"
+    },
+    {
+      "name": "camera-1",
+      "import": "import { camera-1 } from 'lineicons-svelte';",
+      "component": "<camera-1 />"
+    },
+    {
+      "name": "camera-movie-1",
+      "import": "import { camera-movie-1 } from 'lineicons-svelte';",
+      "component": "<camera-movie-1 />"
+    },
+    {
+      "name": "candy-cane-2",
+      "import": "import { candy-cane-2 } from 'lineicons-svelte';",
+      "component": "<candy-cane-2 />"
+    },
+    {
+      "name": "candy-round-1",
+      "import": "import { candy-round-1 } from 'lineicons-svelte';",
+      "component": "<candy-round-1 />"
+    },
+    {
+      "name": "canva",
+      "import": "import { canva } from 'lineicons-svelte';",
+      "component": "<canva />"
+    },
+    {
+      "name": "capsule-1",
+      "import": "import { capsule-1 } from 'lineicons-svelte';",
+      "component": "<capsule-1 />"
+    },
+    {
+      "name": "car-2",
+      "import": "import { car-2 } from 'lineicons-svelte';",
+      "component": "<car-2 />"
+    },
+    {
+      "name": "car-4",
+      "import": "import { car-4 } from 'lineicons-svelte';",
+      "component": "<car-4 />"
+    },
+    {
+      "name": "car-6",
+      "import": "import { car-6 } from 'lineicons-svelte';",
+      "component": "<car-6 />"
+    },
+    {
+      "name": "caravan-1",
+      "import": "import { caravan-1 } from 'lineicons-svelte';",
+      "component": "<caravan-1 />"
+    },
+    {
+      "name": "cart-1",
+      "import": "import { cart-1 } from 'lineicons-svelte';",
+      "component": "<cart-1 />"
+    },
+    {
+      "name": "cart-2",
+      "import": "import { cart-2 } from 'lineicons-svelte';",
+      "component": "<cart-2 />"
+    },
+    {
+      "name": "cash-app",
+      "import": "import { cash-app } from 'lineicons-svelte';",
+      "component": "<cash-app />"
+    },
+    {
+      "name": "certificate-badge-1",
+      "import": "import { certificate-badge-1 } from 'lineicons-svelte';",
+      "component": "<certificate-badge-1 />"
+    },
+    {
+      "name": "chat-bubble-2",
+      "import": "import { chat-bubble-2 } from 'lineicons-svelte';",
+      "component": "<chat-bubble-2 />"
+    },
+    {
+      "name": "check",
+      "import": "import { check } from 'lineicons-svelte';",
+      "component": "<check />"
+    },
+    {
+      "name": "check-circle-1",
+      "import": "import { check-circle-1 } from 'lineicons-svelte';",
+      "component": "<check-circle-1 />"
+    },
+    {
+      "name": "check-square-2",
+      "import": "import { check-square-2 } from 'lineicons-svelte';",
+      "component": "<check-square-2 />"
+    },
+    {
+      "name": "chevron-down",
+      "import": "import { chevron-down } from 'lineicons-svelte';",
+      "component": "<chevron-down />"
+    },
+    {
+      "name": "chevron-down-circle",
+      "import": "import { chevron-down-circle } from 'lineicons-svelte';",
+      "component": "<chevron-down-circle />"
+    },
+    {
+      "name": "chevron-left",
+      "import": "import { chevron-left } from 'lineicons-svelte';",
+      "component": "<chevron-left />"
+    },
+    {
+      "name": "chevron-left-circle",
+      "import": "import { chevron-left-circle } from 'lineicons-svelte';",
+      "component": "<chevron-left-circle />"
+    },
+    {
+      "name": "chevron-right-circle",
+      "import": "import { chevron-right-circle } from 'lineicons-svelte';",
+      "component": "<chevron-right-circle />"
+    },
+    {
+      "name": "chevron-up",
+      "import": "import { chevron-up } from 'lineicons-svelte';",
+      "component": "<chevron-up />"
+    },
+    {
+      "name": "chevron-up-circle",
+      "import": "import { chevron-up-circle } from 'lineicons-svelte';",
+      "component": "<chevron-up-circle />"
+    },
+    {
+      "name": "chrome",
+      "import": "import { chrome } from 'lineicons-svelte';",
+      "component": "<chrome />"
+    },
+    {
+      "name": "chromecast",
+      "import": "import { chromecast } from 'lineicons-svelte';",
+      "component": "<chromecast />"
+    },
+    {
+      "name": "cisco",
+      "import": "import { cisco } from 'lineicons-svelte';",
+      "component": "<cisco />"
+    },
+    {
+      "name": "claude",
+      "import": "import { claude } from 'lineicons-svelte';",
+      "component": "<claude />"
+    },
+    {
+      "name": "clickup",
+      "import": "import { clickup } from 'lineicons-svelte';",
+      "component": "<clickup />"
+    },
+    {
+      "name": "clipboard",
+      "import": "import { clipboard } from 'lineicons-svelte';",
+      "component": "<clipboard />"
+    },
+    {
+      "name": "cloud-2",
+      "import": "import { cloud-2 } from 'lineicons-svelte';",
+      "component": "<cloud-2 />"
+    },
+    {
+      "name": "cloud-bolt-1",
+      "import": "import { cloud-bolt-1 } from 'lineicons-svelte';",
+      "component": "<cloud-bolt-1 />"
+    },
+    {
+      "name": "cloud-bolt-2",
+      "import": "import { cloud-bolt-2 } from 'lineicons-svelte';",
+      "component": "<cloud-bolt-2 />"
+    },
+    {
+      "name": "cloud-check-circle",
+      "import": "import { cloud-check-circle } from 'lineicons-svelte';",
+      "component": "<cloud-check-circle />"
+    },
+    {
+      "name": "cloud-download",
+      "import": "import { cloud-download } from 'lineicons-svelte';",
+      "component": "<cloud-download />"
+    },
+    {
+      "name": "cloud-iot-2",
+      "import": "import { cloud-iot-2 } from 'lineicons-svelte';",
+      "component": "<cloud-iot-2 />"
+    },
+    {
+      "name": "cloud-rain",
+      "import": "import { cloud-rain } from 'lineicons-svelte';",
+      "component": "<cloud-rain />"
+    },
+    {
+      "name": "cloud-refresh-clockwise",
+      "import": "import { cloud-refresh-clockwise } from 'lineicons-svelte';",
+      "component": "<cloud-refresh-clockwise />"
+    },
+    {
+      "name": "cloud-sun",
+      "import": "import { cloud-sun } from 'lineicons-svelte';",
+      "component": "<cloud-sun />"
+    },
+    {
+      "name": "cloud-upload",
+      "import": "import { cloud-upload } from 'lineicons-svelte';",
+      "component": "<cloud-upload />"
+    },
+    {
+      "name": "cloudflare",
+      "import": "import { cloudflare } from 'lineicons-svelte';",
+      "component": "<cloudflare />"
+    },
+    {
+      "name": "code-1",
+      "import": "import { code-1 } from 'lineicons-svelte';",
+      "component": "<code-1 />"
+    },
+    {
+      "name": "code-s",
+      "import": "import { code-s } from 'lineicons-svelte';",
+      "component": "<code-s />"
+    },
+    {
+      "name": "codepen",
+      "import": "import { codepen } from 'lineicons-svelte';",
+      "component": "<codepen />"
+    },
+    {
+      "name": "coffee-cup-2",
+      "import": "import { coffee-cup-2 } from 'lineicons-svelte';",
+      "component": "<coffee-cup-2 />"
+    },
+    {
+      "name": "coinbase",
+      "import": "import { coinbase } from 'lineicons-svelte';",
+      "component": "<coinbase />"
+    },
+    {
+      "name": "colour-palette-3",
+      "import": "import { colour-palette-3 } from 'lineicons-svelte';",
+      "component": "<colour-palette-3 />"
+    },
+    {
+      "name": "comment-1",
+      "import": "import { comment-1 } from 'lineicons-svelte';",
+      "component": "<comment-1 />"
+    },
+    {
+      "name": "comment-1-share",
+      "import": "import { comment-1-share } from 'lineicons-svelte';",
+      "component": "<comment-1-share />"
+    },
+    {
+      "name": "comment-1-text",
+      "import": "import { comment-1-text } from 'lineicons-svelte';",
+      "component": "<comment-1-text />"
+    },
+    {
+      "name": "compass-drafting-2",
+      "import": "import { compass-drafting-2 } from 'lineicons-svelte';",
+      "component": "<compass-drafting-2 />"
+    },
+    {
+      "name": "connectdevelop",
+      "import": "import { connectdevelop } from 'lineicons-svelte';",
+      "component": "<connectdevelop />"
+    },
+    {
+      "name": "copilot",
+      "import": "import { copilot } from 'lineicons-svelte';",
+      "component": "<copilot />"
+    },
+    {
+      "name": "coral",
+      "import": "import { coral } from 'lineicons-svelte';",
+      "component": "<coral />"
+    },
+    {
+      "name": "cpanel",
+      "import": "import { cpanel } from 'lineicons-svelte';",
+      "component": "<cpanel />"
+    },
+    {
+      "name": "crane-4",
+      "import": "import { crane-4 } from 'lineicons-svelte';",
+      "component": "<crane-4 />"
+    },
+    {
+      "name": "creative-commons",
+      "import": "import { creative-commons } from 'lineicons-svelte';",
+      "component": "<creative-commons />"
+    },
+    {
+      "name": "credit-card-multiple",
+      "import": "import { credit-card-multiple } from 'lineicons-svelte';",
+      "component": "<credit-card-multiple />"
+    },
+    {
+      "name": "crop-2",
+      "import": "import { crop-2 } from 'lineicons-svelte';",
+      "component": "<crop-2 />"
+    },
+    {
+      "name": "crown-3",
+      "import": "import { crown-3 } from 'lineicons-svelte';",
+      "component": "<crown-3 />"
+    },
+    {
+      "name": "css3",
+      "import": "import { css3 } from 'lineicons-svelte';",
+      "component": "<css3 />"
+    },
+    {
+      "name": "dashboard-square-1",
+      "import": "import { dashboard-square-1 } from 'lineicons-svelte';",
+      "component": "<dashboard-square-1 />"
+    },
+    {
+      "name": "database-2",
+      "import": "import { database-2 } from 'lineicons-svelte';",
+      "component": "<database-2 />"
+    },
+    {
+      "name": "deno",
+      "import": "import { deno } from 'lineicons-svelte';",
+      "component": "<deno />"
+    },
+    {
+      "name": "dev",
+      "import": "import { dev } from 'lineicons-svelte';",
+      "component": "<dev />"
+    },
+    {
+      "name": "dialogflow",
+      "import": "import { dialogflow } from 'lineicons-svelte';",
+      "component": "<dialogflow />"
+    },
+    {
+      "name": "diamonds-1",
+      "import": "import { diamonds-1 } from 'lineicons-svelte';",
+      "component": "<diamonds-1 />"
+    },
+    {
+      "name": "diamonds-2",
+      "import": "import { diamonds-2 } from 'lineicons-svelte';",
+      "component": "<diamonds-2 />"
+    },
+    {
+      "name": "digitalocean",
+      "import": "import { digitalocean } from 'lineicons-svelte';",
+      "component": "<digitalocean />"
+    },
+    {
+      "name": "diners-club",
+      "import": "import { diners-club } from 'lineicons-svelte';",
+      "component": "<diners-club />"
+    },
+    {
+      "name": "direction-ltr",
+      "import": "import { direction-ltr } from 'lineicons-svelte';",
+      "component": "<direction-ltr />"
+    },
+    {
+      "name": "direction-rtl",
+      "import": "import { direction-rtl } from 'lineicons-svelte';",
+      "component": "<direction-rtl />"
+    },
+    {
+      "name": "discord",
+      "import": "import { discord } from 'lineicons-svelte';",
+      "component": "<discord />"
+    },
+    {
+      "name": "discord-chat",
+      "import": "import { discord-chat } from 'lineicons-svelte';",
+      "component": "<discord-chat />"
+    },
+    {
+      "name": "discover",
+      "import": "import { discover } from 'lineicons-svelte';",
+      "component": "<discover />"
+    },
+    {
+      "name": "docker",
+      "import": "import { docker } from 'lineicons-svelte';",
+      "component": "<docker />"
+    },
+    {
+      "name": "dollar",
+      "import": "import { dollar } from 'lineicons-svelte';",
+      "component": "<dollar />"
+    },
+    {
+      "name": "dollar-circle",
+      "import": "import { dollar-circle } from 'lineicons-svelte';",
+      "component": "<dollar-circle />"
+    },
+    {
+      "name": "double-quotes-end-1",
+      "import": "import { double-quotes-end-1 } from 'lineicons-svelte';",
+      "component": "<double-quotes-end-1 />"
+    },
+    {
+      "name": "download-1",
+      "import": "import { download-1 } from 'lineicons-svelte';",
+      "component": "<download-1 />"
+    },
+    {
+      "name": "download-circle-1",
+      "import": "import { download-circle-1 } from 'lineicons-svelte';",
+      "component": "<download-circle-1 />"
+    },
+    {
+      "name": "dribbble",
+      "import": "import { dribbble } from 'lineicons-svelte';",
+      "component": "<dribbble />"
+    },
+    {
+      "name": "dribbble-symbol",
+      "import": "import { dribbble-symbol } from 'lineicons-svelte';",
+      "component": "<dribbble-symbol />"
+    },
+    {
+      "name": "drizzle",
+      "import": "import { drizzle } from 'lineicons-svelte';",
+      "component": "<drizzle />"
+    },
+    {
+      "name": "dropbox",
+      "import": "import { dropbox } from 'lineicons-svelte';",
+      "component": "<dropbox />"
+    },
+    {
+      "name": "drupal",
+      "import": "import { drupal } from 'lineicons-svelte';",
+      "component": "<drupal />"
+    },
+    {
+      "name": "dumbbell-1",
+      "import": "import { dumbbell-1 } from 'lineicons-svelte';",
+      "component": "<dumbbell-1 />"
+    },
+    {
+      "name": "edge",
+      "import": "import { edge } from 'lineicons-svelte';",
+      "component": "<edge />"
+    },
+    {
+      "name": "emoji-expressionless",
+      "import": "import { emoji-expressionless } from 'lineicons-svelte';",
+      "component": "<emoji-expressionless />"
+    },
+    {
+      "name": "emoji-expressionless-flat-eyes",
+      "import": "import { emoji-expressionless-flat-eyes } from 'lineicons-svelte';",
+      "component": "<emoji-expressionless-flat-eyes />"
+    },
+    {
+      "name": "emoji-grin",
+      "import": "import { emoji-grin } from 'lineicons-svelte';",
+      "component": "<emoji-grin />"
+    },
+    {
+      "name": "emoji-sad",
+      "import": "import { emoji-sad } from 'lineicons-svelte';",
+      "component": "<emoji-sad />"
+    },
+    {
+      "name": "emoji-smile",
+      "import": "import { emoji-smile } from 'lineicons-svelte';",
+      "component": "<emoji-smile />"
+    },
+    {
+      "name": "emoji-smile-side",
+      "import": "import { emoji-smile-side } from 'lineicons-svelte';",
+      "component": "<emoji-smile-side />"
+    },
+    {
+      "name": "emoji-smile-sunglass",
+      "import": "import { emoji-smile-sunglass } from 'lineicons-svelte';",
+      "component": "<emoji-smile-sunglass />"
+    },
+    {
+      "name": "emoji-smile-tongue",
+      "import": "import { emoji-smile-tongue } from 'lineicons-svelte';",
+      "component": "<emoji-smile-tongue />"
+    },
+    {
+      "name": "enter",
+      "import": "import { enter } from 'lineicons-svelte';",
+      "component": "<enter />"
+    },
+    {
+      "name": "enter-down",
+      "import": "import { enter-down } from 'lineicons-svelte';",
+      "component": "<enter-down />"
+    },
+    {
+      "name": "envato",
+      "import": "import { envato } from 'lineicons-svelte';",
+      "component": "<envato />"
+    },
+    {
+      "name": "envelope-1",
+      "import": "import { envelope-1 } from 'lineicons-svelte';",
+      "component": "<envelope-1 />"
+    },
+    {
+      "name": "eraser-1",
+      "import": "import { eraser-1 } from 'lineicons-svelte';",
+      "component": "<eraser-1 />"
+    },
+    {
+      "name": "ethereum-logo",
+      "import": "import { ethereum-logo } from 'lineicons-svelte';",
+      "component": "<ethereum-logo />"
+    },
+    {
+      "name": "euro",
+      "import": "import { euro } from 'lineicons-svelte';",
+      "component": "<euro />"
+    },
+    {
+      "name": "exit",
+      "import": "import { exit } from 'lineicons-svelte';",
+      "component": "<exit />"
+    },
+    {
+      "name": "exit-up",
+      "import": "import { exit-up } from 'lineicons-svelte';",
+      "component": "<exit-up />"
+    },
+    {
+      "name": "expand-arrow-1",
+      "import": "import { expand-arrow-1 } from 'lineicons-svelte';",
+      "component": "<expand-arrow-1 />"
+    },
+    {
+      "name": "expand-square-4",
+      "import": "import { expand-square-4 } from 'lineicons-svelte';",
+      "component": "<expand-square-4 />"
+    },
+    {
+      "name": "expressjs",
+      "import": "import { expressjs } from 'lineicons-svelte';",
+      "component": "<expressjs />"
+    },
+    {
+      "name": "eye",
+      "import": "import { eye } from 'lineicons-svelte';",
+      "component": "<eye />"
+    },
+    {
+      "name": "facebook",
+      "import": "import { facebook } from 'lineicons-svelte';",
+      "component": "<facebook />"
+    },
+    {
+      "name": "facebook-messenger",
+      "import": "import { facebook-messenger } from 'lineicons-svelte';",
+      "component": "<facebook-messenger />"
+    },
+    {
+      "name": "facebook-rounded",
+      "import": "import { facebook-rounded } from 'lineicons-svelte';",
+      "component": "<facebook-rounded />"
+    },
+    {
+      "name": "facebook-square",
+      "import": "import { facebook-square } from 'lineicons-svelte';",
+      "component": "<facebook-square />"
+    },
+    {
+      "name": "facetime",
+      "import": "import { facetime } from 'lineicons-svelte';",
+      "component": "<facetime />"
+    },
+    {
+      "name": "figma",
+      "import": "import { figma } from 'lineicons-svelte';",
+      "component": "<figma />"
+    },
+    {
+      "name": "file-format-zip",
+      "import": "import { file-format-zip } from 'lineicons-svelte';",
+      "component": "<file-format-zip />"
+    },
+    {
+      "name": "file-multiple",
+      "import": "import { file-multiple } from 'lineicons-svelte';",
+      "component": "<file-multiple />"
+    },
+    {
+      "name": "file-pencil",
+      "import": "import { file-pencil } from 'lineicons-svelte';",
+      "component": "<file-pencil />"
+    },
+    {
+      "name": "file-plus-circle",
+      "import": "import { file-plus-circle } from 'lineicons-svelte';",
+      "component": "<file-plus-circle />"
+    },
+    {
+      "name": "file-question",
+      "import": "import { file-question } from 'lineicons-svelte';",
+      "component": "<file-question />"
+    },
+    {
+      "name": "file-xmark",
+      "import": "import { file-xmark } from 'lineicons-svelte';",
+      "component": "<file-xmark />"
+    },
+    {
+      "name": "firebase",
+      "import": "import { firebase } from 'lineicons-svelte';",
+      "component": "<firebase />"
+    },
+    {
+      "name": "firefox",
+      "import": "import { firefox } from 'lineicons-svelte';",
+      "component": "<firefox />"
+    },
+    {
+      "name": "firework-rocket-4",
+      "import": "import { firework-rocket-4 } from 'lineicons-svelte';",
+      "component": "<firework-rocket-4 />"
+    },
+    {
+      "name": "fitbit",
+      "import": "import { fitbit } from 'lineicons-svelte';",
+      "component": "<fitbit />"
+    },
+    {
+      "name": "flag-1",
+      "import": "import { flag-1 } from 'lineicons-svelte';",
+      "component": "<flag-1 />"
+    },
+    {
+      "name": "flag-2",
+      "import": "import { flag-2 } from 'lineicons-svelte';",
+      "component": "<flag-2 />"
+    },
+    {
+      "name": "flickr",
+      "import": "import { flickr } from 'lineicons-svelte';",
+      "component": "<flickr />"
+    },
+    {
+      "name": "floppy-disk-1",
+      "import": "import { floppy-disk-1 } from 'lineicons-svelte';",
+      "component": "<floppy-disk-1 />"
+    },
+    {
+      "name": "flower-2",
+      "import": "import { flower-2 } from 'lineicons-svelte';",
+      "component": "<flower-2 />"
+    },
+    {
+      "name": "flutter",
+      "import": "import { flutter } from 'lineicons-svelte';",
+      "component": "<flutter />"
+    },
+    {
+      "name": "folder-1",
+      "import": "import { folder-1 } from 'lineicons-svelte';",
+      "component": "<folder-1 />"
+    },
+    {
+      "name": "ford",
+      "import": "import { ford } from 'lineicons-svelte';",
+      "component": "<ford />"
+    },
+    {
+      "name": "framer",
+      "import": "import { framer } from 'lineicons-svelte';",
+      "component": "<framer />"
+    },
+    {
+      "name": "funnel-1",
+      "import": "import { funnel-1 } from 'lineicons-svelte';",
+      "component": "<funnel-1 />"
+    },
+    {
+      "name": "gallery",
+      "import": "import { gallery } from 'lineicons-svelte';",
+      "component": "<gallery />"
+    },
+    {
+      "name": "game-pad-modern-1",
+      "import": "import { game-pad-modern-1 } from 'lineicons-svelte';",
+      "component": "<game-pad-modern-1 />"
+    },
+    {
+      "name": "gatsby",
+      "import": "import { gatsby } from 'lineicons-svelte';",
+      "component": "<gatsby />"
+    },
+    {
+      "name": "gauge-1",
+      "import": "import { gauge-1 } from 'lineicons-svelte';",
+      "component": "<gauge-1 />"
+    },
+    {
+      "name": "gear-1",
+      "import": "import { gear-1 } from 'lineicons-svelte';",
+      "component": "<gear-1 />"
+    },
+    {
+      "name": "gears-3",
+      "import": "import { gears-3 } from 'lineicons-svelte';",
+      "component": "<gears-3 />"
+    },
+    {
+      "name": "gemini",
+      "import": "import { gemini } from 'lineicons-svelte';",
+      "component": "<gemini />"
+    },
+    {
+      "name": "git",
+      "import": "import { git } from 'lineicons-svelte';",
+      "component": "<git />"
+    },
+    {
+      "name": "github",
+      "import": "import { github } from 'lineicons-svelte';",
+      "component": "<github />"
+    },
+    {
+      "name": "glass-juice-1",
+      "import": "import { glass-juice-1 } from 'lineicons-svelte';",
+      "component": "<glass-juice-1 />"
+    },
+    {
+      "name": "globe-1",
+      "import": "import { globe-1 } from 'lineicons-svelte';",
+      "component": "<globe-1 />"
+    },
+    {
+      "name": "globe-stand",
+      "import": "import { globe-stand } from 'lineicons-svelte';",
+      "component": "<globe-stand />"
+    },
+    {
+      "name": "go",
+      "import": "import { go } from 'lineicons-svelte';",
+      "component": "<go />"
+    },
+    {
+      "name": "goodreads",
+      "import": "import { goodreads } from 'lineicons-svelte';",
+      "component": "<goodreads />"
+    },
+    {
+      "name": "google",
+      "import": "import { google } from 'lineicons-svelte';",
+      "component": "<google />"
+    },
+    {
+      "name": "google-cloud",
+      "import": "import { google-cloud } from 'lineicons-svelte';",
+      "component": "<google-cloud />"
+    },
+    {
+      "name": "google-drive",
+      "import": "import { google-drive } from 'lineicons-svelte';",
+      "component": "<google-drive />"
+    },
+    {
+      "name": "google-meet",
+      "import": "import { google-meet } from 'lineicons-svelte';",
+      "component": "<google-meet />"
+    },
+    {
+      "name": "google-pay",
+      "import": "import { google-pay } from 'lineicons-svelte';",
+      "component": "<google-pay />"
+    },
+    {
+      "name": "google-wallet",
+      "import": "import { google-wallet } from 'lineicons-svelte';",
+      "component": "<google-wallet />"
+    },
+    {
+      "name": "graduation-cap-1",
+      "import": "import { graduation-cap-1 } from 'lineicons-svelte';",
+      "component": "<graduation-cap-1 />"
+    },
+    {
+      "name": "grammarly",
+      "import": "import { grammarly } from 'lineicons-svelte';",
+      "component": "<grammarly />"
+    },
+    {
+      "name": "hacker-news",
+      "import": "import { hacker-news } from 'lineicons-svelte';",
+      "component": "<hacker-news />"
+    },
+    {
+      "name": "hammer-1",
+      "import": "import { hammer-1 } from 'lineicons-svelte';",
+      "component": "<hammer-1 />"
+    },
+    {
+      "name": "hammer-2",
+      "import": "import { hammer-2 } from 'lineicons-svelte';",
+      "component": "<hammer-2 />"
+    },
+    {
+      "name": "hand-mic",
+      "import": "import { hand-mic } from 'lineicons-svelte';",
+      "component": "<hand-mic />"
+    },
+    {
+      "name": "hand-shake",
+      "import": "import { hand-shake } from 'lineicons-svelte';",
+      "component": "<hand-shake />"
+    },
+    {
+      "name": "hand-stop",
+      "import": "import { hand-stop } from 'lineicons-svelte';",
+      "component": "<hand-stop />"
+    },
+    {
+      "name": "hand-taking-dollar",
+      "import": "import { hand-taking-dollar } from 'lineicons-svelte';",
+      "component": "<hand-taking-dollar />"
+    },
+    {
+      "name": "hand-taking-leaf-1",
+      "import": "import { hand-taking-leaf-1 } from 'lineicons-svelte';",
+      "component": "<hand-taking-leaf-1 />"
+    },
+    {
+      "name": "hand-taking-user",
+      "import": "import { hand-taking-user } from 'lineicons-svelte';",
+      "component": "<hand-taking-user />"
+    },
+    {
+      "name": "hashnode",
+      "import": "import { hashnode } from 'lineicons-svelte';",
+      "component": "<hashnode />"
+    },
+    {
+      "name": "hat-chef-3",
+      "import": "import { hat-chef-3 } from 'lineicons-svelte';",
+      "component": "<hat-chef-3 />"
+    },
+    {
+      "name": "headphone-1",
+      "import": "import { headphone-1 } from 'lineicons-svelte';",
+      "component": "<headphone-1 />"
+    },
+    {
+      "name": "heart",
+      "import": "import { heart } from 'lineicons-svelte';",
+      "component": "<heart />"
+    },
+    {
+      "name": "helicopter-2",
+      "import": "import { helicopter-2 } from 'lineicons-svelte';",
+      "component": "<helicopter-2 />"
+    },
+    {
+      "name": "helmet-safety-1",
+      "import": "import { helmet-safety-1 } from 'lineicons-svelte';",
+      "component": "<helmet-safety-1 />"
+    },
+    {
+      "name": "hierarchy-1",
+      "import": "import { hierarchy-1 } from 'lineicons-svelte';",
+      "component": "<hierarchy-1 />"
+    },
+    {
+      "name": "highlighter-1",
+      "import": "import { highlighter-1 } from 'lineicons-svelte';",
+      "component": "<highlighter-1 />"
+    },
+    {
+      "name": "highlighter-2",
+      "import": "import { highlighter-2 } from 'lineicons-svelte';",
+      "component": "<highlighter-2 />"
+    },
+    {
+      "name": "home-2",
+      "import": "import { home-2 } from 'lineicons-svelte';",
+      "component": "<home-2 />"
+    },
+    {
+      "name": "hospital-2",
+      "import": "import { hospital-2 } from 'lineicons-svelte';",
+      "component": "<hospital-2 />"
+    },
+    {
+      "name": "hourglass",
+      "import": "import { hourglass } from 'lineicons-svelte';",
+      "component": "<hourglass />"
+    },
+    {
+      "name": "html5",
+      "import": "import { html5 } from 'lineicons-svelte';",
+      "component": "<html5 />"
+    },
+    {
+      "name": "ibm",
+      "import": "import { ibm } from 'lineicons-svelte';",
+      "component": "<ibm />"
+    },
+    {
+      "name": "id-card",
+      "import": "import { id-card } from 'lineicons-svelte';",
+      "component": "<id-card />"
+    },
+    {
+      "name": "imdb",
+      "import": "import { imdb } from 'lineicons-svelte';",
+      "component": "<imdb />"
+    },
+    {
+      "name": "indent",
+      "import": "import { indent } from 'lineicons-svelte';",
+      "component": "<indent />"
+    },
+    {
+      "name": "info",
+      "import": "import { info } from 'lineicons-svelte';",
+      "component": "<info />"
+    },
+    {
+      "name": "injection-1",
+      "import": "import { injection-1 } from 'lineicons-svelte';",
+      "component": "<injection-1 />"
+    },
+    {
+      "name": "instagram",
+      "import": "import { instagram } from 'lineicons-svelte';",
+      "component": "<instagram />"
+    },
+    {
+      "name": "instagram-logotype",
+      "import": "import { instagram-logotype } from 'lineicons-svelte';",
+      "component": "<instagram-logotype />"
+    },
+    {
+      "name": "intel",
+      "import": "import { intel } from 'lineicons-svelte';",
+      "component": "<intel />"
+    },
+    {
+      "name": "ios",
+      "import": "import { ios } from 'lineicons-svelte';",
+      "component": "<ios />"
+    },
+    {
+      "name": "island-2",
+      "import": "import { island-2 } from 'lineicons-svelte';",
+      "component": "<island-2 />"
+    },
+    {
+      "name": "jaguar",
+      "import": "import { jaguar } from 'lineicons-svelte';",
+      "component": "<jaguar />"
+    },
+    {
+      "name": "jamstack",
+      "import": "import { jamstack } from 'lineicons-svelte';",
+      "component": "<jamstack />"
+    },
+    {
+      "name": "java",
+      "import": "import { java } from 'lineicons-svelte';",
+      "component": "<java />"
+    },
+    {
+      "name": "javascript",
+      "import": "import { javascript } from 'lineicons-svelte';",
+      "component": "<javascript />"
+    },
+    {
+      "name": "jcb",
+      "import": "import { jcb } from 'lineicons-svelte';",
+      "component": "<jcb />"
+    },
+    {
+      "name": "joomla",
+      "import": "import { joomla } from 'lineicons-svelte';",
+      "component": "<joomla />"
+    },
+    {
+      "name": "jsfiddle",
+      "import": "import { jsfiddle } from 'lineicons-svelte';",
+      "component": "<jsfiddle />"
+    },
+    {
+      "name": "key-1",
+      "import": "import { key-1 } from 'lineicons-svelte';",
+      "component": "<key-1 />"
+    },
+    {
+      "name": "keyboard",
+      "import": "import { keyboard } from 'lineicons-svelte';",
+      "component": "<keyboard />"
+    },
+    {
+      "name": "knife-fork-1",
+      "import": "import { knife-fork-1 } from 'lineicons-svelte';",
+      "component": "<knife-fork-1 />"
+    },
+    {
+      "name": "kubernetes",
+      "import": "import { kubernetes } from 'lineicons-svelte';",
+      "component": "<kubernetes />"
+    },
+    {
+      "name": "label-dollar-2",
+      "import": "import { label-dollar-2 } from 'lineicons-svelte';",
+      "component": "<label-dollar-2 />"
+    },
+    {
+      "name": "laptop-2",
+      "import": "import { laptop-2 } from 'lineicons-svelte';",
+      "component": "<laptop-2 />"
+    },
+    {
+      "name": "laptop-phone",
+      "import": "import { laptop-phone } from 'lineicons-svelte';",
+      "component": "<laptop-phone />"
+    },
+    {
+      "name": "laravel",
+      "import": "import { laravel } from 'lineicons-svelte';",
+      "component": "<laravel />"
+    },
+    {
+      "name": "layers-1",
+      "import": "import { layers-1 } from 'lineicons-svelte';",
+      "component": "<layers-1 />"
+    },
+    {
+      "name": "layout-26",
+      "import": "import { layout-26 } from 'lineicons-svelte';",
+      "component": "<layout-26 />"
+    },
+    {
+      "name": "layout-9",
+      "import": "import { layout-9 } from 'lineicons-svelte';",
+      "component": "<layout-9 />"
+    },
+    {
+      "name": "leaf-1",
+      "import": "import { leaf-1 } from 'lineicons-svelte';",
+      "component": "<leaf-1 />"
+    },
+    {
+      "name": "leaf-6",
+      "import": "import { leaf-6 } from 'lineicons-svelte';",
+      "component": "<leaf-6 />"
+    },
+    {
+      "name": "lemon-squeezy",
+      "import": "import { lemon-squeezy } from 'lineicons-svelte';",
+      "component": "<lemon-squeezy />"
+    },
+    {
+      "name": "life-guard-tube-1",
+      "import": "import { life-guard-tube-1 } from 'lineicons-svelte';",
+      "component": "<life-guard-tube-1 />"
+    },
+    {
+      "name": "line",
+      "import": "import { line } from 'lineicons-svelte';",
+      "component": "<line />"
+    },
+    {
+      "name": "line-dashed",
+      "import": "import { line-dashed } from 'lineicons-svelte';",
+      "component": "<line-dashed />"
+    },
+    {
+      "name": "line-dotted",
+      "import": "import { line-dotted } from 'lineicons-svelte';",
+      "component": "<line-dotted />"
+    },
+    {
+      "name": "line-height",
+      "import": "import { line-height } from 'lineicons-svelte';",
+      "component": "<line-height />"
+    },
+    {
+      "name": "lineicons",
+      "import": "import { lineicons } from 'lineicons-svelte';",
+      "component": "<lineicons />"
+    },
+    {
+      "name": "link-2-angular-right",
+      "import": "import { link-2-angular-right } from 'lineicons-svelte';",
+      "component": "<link-2-angular-right />"
+    },
+    {
+      "name": "linkedin",
+      "import": "import { linkedin } from 'lineicons-svelte';",
+      "component": "<linkedin />"
+    },
+    {
+      "name": "location-arrow-right",
+      "import": "import { location-arrow-right } from 'lineicons-svelte';",
+      "component": "<location-arrow-right />"
+    },
+    {
+      "name": "locked-1",
+      "import": "import { locked-1 } from 'lineicons-svelte';",
+      "component": "<locked-1 />"
+    },
+    {
+      "name": "locked-2",
+      "import": "import { locked-2 } from 'lineicons-svelte';",
+      "component": "<locked-2 />"
+    },
+    {
+      "name": "loom",
+      "import": "import { loom } from 'lineicons-svelte';",
+      "component": "<loom />"
+    },
+    {
+      "name": "magento",
+      "import": "import { magento } from 'lineicons-svelte';",
+      "component": "<magento />"
+    },
+    {
+      "name": "magnet",
+      "import": "import { magnet } from 'lineicons-svelte';",
+      "component": "<magnet />"
+    },
+    {
+      "name": "mailchimp",
+      "import": "import { mailchimp } from 'lineicons-svelte';",
+      "component": "<mailchimp />"
+    },
+    {
+      "name": "map-marker-1",
+      "import": "import { map-marker-1 } from 'lineicons-svelte';",
+      "component": "<map-marker-1 />"
+    },
+    {
+      "name": "map-marker-5",
+      "import": "import { map-marker-5 } from 'lineicons-svelte';",
+      "component": "<map-marker-5 />"
+    },
+    {
+      "name": "map-pin-5",
+      "import": "import { map-pin-5 } from 'lineicons-svelte';",
+      "component": "<map-pin-5 />"
+    },
+    {
+      "name": "markdown",
+      "import": "import { markdown } from 'lineicons-svelte';",
+      "component": "<markdown />"
+    },
+    {
+      "name": "mastercard",
+      "import": "import { mastercard } from 'lineicons-svelte';",
+      "component": "<mastercard />"
+    },
+    {
+      "name": "medium",
+      "import": "import { medium } from 'lineicons-svelte';",
+      "component": "<medium />"
+    },
+    {
+      "name": "medium-alt",
+      "import": "import { medium-alt } from 'lineicons-svelte';",
+      "component": "<medium-alt />"
+    },
+    {
+      "name": "megaphone-1",
+      "import": "import { megaphone-1 } from 'lineicons-svelte';",
+      "component": "<megaphone-1 />"
+    },
+    {
+      "name": "menu-cheesburger",
+      "import": "import { menu-cheesburger } from 'lineicons-svelte';",
+      "component": "<menu-cheesburger />"
+    },
+    {
+      "name": "menu-hamburger-1",
+      "import": "import { menu-hamburger-1 } from 'lineicons-svelte';",
+      "component": "<menu-hamburger-1 />"
+    },
+    {
+      "name": "menu-meatballs-1",
+      "import": "import { menu-meatballs-1 } from 'lineicons-svelte';",
+      "component": "<menu-meatballs-1 />"
+    },
+    {
+      "name": "menu-meatballs-2",
+      "import": "import { menu-meatballs-2 } from 'lineicons-svelte';",
+      "component": "<menu-meatballs-2 />"
+    },
+    {
+      "name": "mercedes",
+      "import": "import { mercedes } from 'lineicons-svelte';",
+      "component": "<mercedes />"
+    },
+    {
+      "name": "message-2",
+      "import": "import { message-2 } from 'lineicons-svelte';",
+      "component": "<message-2 />"
+    },
+    {
+      "name": "message-2-question",
+      "import": "import { message-2-question } from 'lineicons-svelte';",
+      "component": "<message-2-question />"
+    },
+    {
+      "name": "message-3-text",
+      "import": "import { message-3-text } from 'lineicons-svelte';",
+      "component": "<message-3-text />"
+    },
+    {
+      "name": "meta",
+      "import": "import { meta } from 'lineicons-svelte';",
+      "component": "<meta />"
+    },
+    {
+      "name": "meta-alt",
+      "import": "import { meta-alt } from 'lineicons-svelte';",
+      "component": "<meta-alt />"
+    },
+    {
+      "name": "microphone-1",
+      "import": "import { microphone-1 } from 'lineicons-svelte';",
+      "component": "<microphone-1 />"
+    },
+    {
+      "name": "microscope",
+      "import": "import { microscope } from 'lineicons-svelte';",
+      "component": "<microscope />"
+    },
+    {
+      "name": "microsoft",
+      "import": "import { microsoft } from 'lineicons-svelte';",
+      "component": "<microsoft />"
+    },
+    {
+      "name": "microsoft-edge",
+      "import": "import { microsoft-edge } from 'lineicons-svelte';",
+      "component": "<microsoft-edge />"
+    },
+    {
+      "name": "microsoft-teams",
+      "import": "import { microsoft-teams } from 'lineicons-svelte';",
+      "component": "<microsoft-teams />"
+    },
+    {
+      "name": "minus",
+      "import": "import { minus } from 'lineicons-svelte';",
+      "component": "<minus />"
+    },
+    {
+      "name": "minus-circle",
+      "import": "import { minus-circle } from 'lineicons-svelte';",
+      "component": "<minus-circle />"
+    },
+    {
+      "name": "mongodb",
+      "import": "import { mongodb } from 'lineicons-svelte';",
+      "component": "<mongodb />"
+    },
+    {
+      "name": "monitor",
+      "import": "import { monitor } from 'lineicons-svelte';",
+      "component": "<monitor />"
+    },
+    {
+      "name": "monitor-code",
+      "import": "import { monitor-code } from 'lineicons-svelte';",
+      "component": "<monitor-code />"
+    },
+    {
+      "name": "monitor-mac",
+      "import": "import { monitor-mac } from 'lineicons-svelte';",
+      "component": "<monitor-mac />"
+    },
+    {
+      "name": "moon-half-right-5",
+      "import": "import { moon-half-right-5 } from 'lineicons-svelte';",
+      "component": "<moon-half-right-5 />"
+    },
+    {
+      "name": "mountains-2",
+      "import": "import { mountains-2 } from 'lineicons-svelte';",
+      "component": "<mountains-2 />"
+    },
+    {
+      "name": "mouse-2",
+      "import": "import { mouse-2 } from 'lineicons-svelte';",
+      "component": "<mouse-2 />"
+    },
+    {
+      "name": "mushroom-1",
+      "import": "import { mushroom-1 } from 'lineicons-svelte';",
+      "component": "<mushroom-1 />"
+    },
+    {
+      "name": "mushroom-5",
+      "import": "import { mushroom-5 } from 'lineicons-svelte';",
+      "component": "<mushroom-5 />"
+    },
+    {
+      "name": "music",
+      "import": "import { music } from 'lineicons-svelte';",
+      "component": "<music />"
+    },
+    {
+      "name": "mysql",
+      "import": "import { mysql } from 'lineicons-svelte';",
+      "component": "<mysql />"
+    },
+    {
+      "name": "nasa",
+      "import": "import { nasa } from 'lineicons-svelte';",
+      "component": "<nasa />"
+    },
+    {
+      "name": "netflix",
+      "import": "import { netflix } from 'lineicons-svelte';",
+      "component": "<netflix />"
+    },
+    {
+      "name": "netlify",
+      "import": "import { netlify } from 'lineicons-svelte';",
+      "component": "<netlify />"
+    },
+    {
+      "name": "next-step-2",
+      "import": "import { next-step-2 } from 'lineicons-svelte';",
+      "component": "<next-step-2 />"
+    },
+    {
+      "name": "nextjs",
+      "import": "import { nextjs } from 'lineicons-svelte';",
+      "component": "<nextjs />"
+    },
+    {
+      "name": "nike",
+      "import": "import { nike } from 'lineicons-svelte';",
+      "component": "<nike />"
+    },
+    {
+      "name": "nissan",
+      "import": "import { nissan } from 'lineicons-svelte';",
+      "component": "<nissan />"
+    },
+    {
+      "name": "nodejs",
+      "import": "import { nodejs } from 'lineicons-svelte';",
+      "component": "<nodejs />"
+    },
+    {
+      "name": "nodejs-alt",
+      "import": "import { nodejs-alt } from 'lineicons-svelte';",
+      "component": "<nodejs-alt />"
+    },
+    {
+      "name": "notebook-1",
+      "import": "import { notebook-1 } from 'lineicons-svelte';",
+      "component": "<notebook-1 />"
+    },
+    {
+      "name": "notion",
+      "import": "import { notion } from 'lineicons-svelte';",
+      "component": "<notion />"
+    },
+    {
+      "name": "npm",
+      "import": "import { npm } from 'lineicons-svelte';",
+      "component": "<npm />"
+    },
+    {
+      "name": "nuxt",
+      "import": "import { nuxt } from 'lineicons-svelte';",
+      "component": "<nuxt />"
+    },
+    {
+      "name": "nvidia",
+      "import": "import { nvidia } from 'lineicons-svelte';",
+      "component": "<nvidia />"
+    },
+    {
+      "name": "oculus",
+      "import": "import { oculus } from 'lineicons-svelte';",
+      "component": "<oculus />"
+    },
+    {
+      "name": "open-ai",
+      "import": "import { open-ai } from 'lineicons-svelte';",
+      "component": "<open-ai />"
+    },
+    {
+      "name": "opera-mini",
+      "import": "import { opera-mini } from 'lineicons-svelte';",
+      "component": "<opera-mini />"
+    },
+    {
+      "name": "oracle",
+      "import": "import { oracle } from 'lineicons-svelte';",
+      "component": "<oracle />"
+    },
+    {
+      "name": "outdent",
+      "import": "import { outdent } from 'lineicons-svelte';",
+      "component": "<outdent />"
+    },
+    {
+      "name": "paddle",
+      "import": "import { paddle } from 'lineicons-svelte';",
+      "component": "<paddle />"
+    },
+    {
+      "name": "page-break-1",
+      "import": "import { page-break-1 } from 'lineicons-svelte';",
+      "component": "<page-break-1 />"
+    },
+    {
+      "name": "pagination",
+      "import": "import { pagination } from 'lineicons-svelte';",
+      "component": "<pagination />"
+    },
+    {
+      "name": "paint-bucket",
+      "import": "import { paint-bucket } from 'lineicons-svelte';",
+      "component": "<paint-bucket />"
+    },
+    {
+      "name": "paint-roller-1",
+      "import": "import { paint-roller-1 } from 'lineicons-svelte';",
+      "component": "<paint-roller-1 />"
+    },
+    {
+      "name": "paperclip-1",
+      "import": "import { paperclip-1 } from 'lineicons-svelte';",
+      "component": "<paperclip-1 />"
+    },
+    {
+      "name": "party-flags",
+      "import": "import { party-flags } from 'lineicons-svelte';",
+      "component": "<party-flags />"
+    },
+    {
+      "name": "party-spray",
+      "import": "import { party-spray } from 'lineicons-svelte';",
+      "component": "<party-spray />"
+    },
+    {
+      "name": "patreon",
+      "import": "import { patreon } from 'lineicons-svelte';",
+      "component": "<patreon />"
+    },
+    {
+      "name": "pause",
+      "import": "import { pause } from 'lineicons-svelte';",
+      "component": "<pause />"
+    },
+    {
+      "name": "payoneer",
+      "import": "import { payoneer } from 'lineicons-svelte';",
+      "component": "<payoneer />"
+    },
+    {
+      "name": "paypal",
+      "import": "import { paypal } from 'lineicons-svelte';",
+      "component": "<paypal />"
+    },
+    {
+      "name": "pen-to-square",
+      "import": "import { pen-to-square } from 'lineicons-svelte';",
+      "component": "<pen-to-square />"
+    },
+    {
+      "name": "pencil-1",
+      "import": "import { pencil-1 } from 'lineicons-svelte';",
+      "component": "<pencil-1 />"
+    },
+    {
+      "name": "pepsi",
+      "import": "import { pepsi } from 'lineicons-svelte';",
+      "component": "<pepsi />"
+    },
+    {
+      "name": "phone",
+      "import": "import { phone } from 'lineicons-svelte';",
+      "component": "<phone />"
+    },
+    {
+      "name": "photos",
+      "import": "import { photos } from 'lineicons-svelte';",
+      "component": "<photos />"
+    },
+    {
+      "name": "php",
+      "import": "import { php } from 'lineicons-svelte';",
+      "component": "<php />"
+    },
+    {
+      "name": "pie-chart-2",
+      "import": "import { pie-chart-2 } from 'lineicons-svelte';",
+      "component": "<pie-chart-2 />"
+    },
+    {
+      "name": "pilcrow",
+      "import": "import { pilcrow } from 'lineicons-svelte';",
+      "component": "<pilcrow />"
+    },
+    {
+      "name": "pimjo-logo",
+      "import": "import { pimjo-logo } from 'lineicons-svelte';",
+      "component": "<pimjo-logo />"
+    },
+    {
+      "name": "pimjo-symbol",
+      "import": "import { pimjo-symbol } from 'lineicons-svelte';",
+      "component": "<pimjo-symbol />"
+    },
+    {
+      "name": "pinterest",
+      "import": "import { pinterest } from 'lineicons-svelte';",
+      "component": "<pinterest />"
+    },
+    {
+      "name": "pizza-2",
+      "import": "import { pizza-2 } from 'lineicons-svelte';",
+      "component": "<pizza-2 />"
+    },
+    {
+      "name": "placeholder-dollar",
+      "import": "import { placeholder-dollar } from 'lineicons-svelte';",
+      "component": "<placeholder-dollar />"
+    },
+    {
+      "name": "plantscale",
+      "import": "import { plantscale } from 'lineicons-svelte';",
+      "component": "<plantscale />"
+    },
+    {
+      "name": "play",
+      "import": "import { play } from 'lineicons-svelte';",
+      "component": "<play />"
+    },
+    {
+      "name": "play-store",
+      "import": "import { play-store } from 'lineicons-svelte';",
+      "component": "<play-store />"
+    },
+    {
+      "name": "playstation",
+      "import": "import { playstation } from 'lineicons-svelte';",
+      "component": "<playstation />"
+    },
+    {
+      "name": "plug-1",
+      "import": "import { plug-1 } from 'lineicons-svelte';",
+      "component": "<plug-1 />"
+    },
+    {
+      "name": "plus",
+      "import": "import { plus } from 'lineicons-svelte';",
+      "component": "<plus />"
+    },
+    {
+      "name": "plus-circle",
+      "import": "import { plus-circle } from 'lineicons-svelte';",
+      "component": "<plus-circle />"
+    },
+    {
+      "name": "pnpm",
+      "import": "import { pnpm } from 'lineicons-svelte';",
+      "component": "<pnpm />"
+    },
+    {
+      "name": "postgresql",
+      "import": "import { postgresql } from 'lineicons-svelte';",
+      "component": "<postgresql />"
+    },
+    {
+      "name": "postman",
+      "import": "import { postman } from 'lineicons-svelte';",
+      "component": "<postman />"
+    },
+    {
+      "name": "pound",
+      "import": "import { pound } from 'lineicons-svelte';",
+      "component": "<pound />"
+    },
+    {
+      "name": "power-button",
+      "import": "import { power-button } from 'lineicons-svelte';",
+      "component": "<power-button />"
+    },
+    {
+      "name": "previous-step-2",
+      "import": "import { previous-step-2 } from 'lineicons-svelte';",
+      "component": "<previous-step-2 />"
+    },
+    {
+      "name": "printer",
+      "import": "import { printer } from 'lineicons-svelte';",
+      "component": "<printer />"
+    },
+    {
+      "name": "prisma",
+      "import": "import { prisma } from 'lineicons-svelte';",
+      "component": "<prisma />"
+    },
+    {
+      "name": "producthunt",
+      "import": "import { producthunt } from 'lineicons-svelte';",
+      "component": "<producthunt />"
+    },
+    {
+      "name": "proton-mail-logo",
+      "import": "import { proton-mail-logo } from 'lineicons-svelte';",
+      "component": "<proton-mail-logo />"
+    },
+    {
+      "name": "proton-mail-symbol",
+      "import": "import { proton-mail-symbol } from 'lineicons-svelte';",
+      "component": "<proton-mail-symbol />"
+    },
+    {
+      "name": "python",
+      "import": "import { python } from 'lineicons-svelte';",
+      "component": "<python />"
+    },
+    {
+      "name": "question-mark",
+      "import": "import { question-mark } from 'lineicons-svelte';",
+      "component": "<question-mark />"
+    },
+    {
+      "name": "question-mark-circle",
+      "import": "import { question-mark-circle } from 'lineicons-svelte';",
+      "component": "<question-mark-circle />"
+    },
+    {
+      "name": "quora",
+      "import": "import { quora } from 'lineicons-svelte';",
+      "component": "<quora />"
+    },
+    {
+      "name": "radis",
+      "import": "import { radis } from 'lineicons-svelte';",
+      "component": "<radis />"
+    },
+    {
+      "name": "react",
+      "import": "import { react } from 'lineicons-svelte';",
+      "component": "<react />"
+    },
+    {
+      "name": "reddit",
+      "import": "import { reddit } from 'lineicons-svelte';",
+      "component": "<reddit />"
+    },
+    {
+      "name": "refresh-circle-1-clockwise",
+      "import": "import { refresh-circle-1-clockwise } from 'lineicons-svelte';",
+      "component": "<refresh-circle-1-clockwise />"
+    },
+    {
+      "name": "refresh-dollar-1",
+      "import": "import { refresh-dollar-1 } from 'lineicons-svelte';",
+      "component": "<refresh-dollar-1 />"
+    },
+    {
+      "name": "refresh-user-1",
+      "import": "import { refresh-user-1 } from 'lineicons-svelte';",
+      "component": "<refresh-user-1 />"
+    },
+    {
+      "name": "remix-js",
+      "import": "import { remix-js } from 'lineicons-svelte';",
+      "component": "<remix-js />"
+    },
+    {
+      "name": "road-1",
+      "import": "import { road-1 } from 'lineicons-svelte';",
+      "component": "<road-1 />"
+    },
+    {
+      "name": "rocket-5",
+      "import": "import { rocket-5 } from 'lineicons-svelte';",
+      "component": "<rocket-5 />"
+    },
+    {
+      "name": "route-1",
+      "import": "import { route-1 } from 'lineicons-svelte';",
+      "component": "<route-1 />"
+    },
+    {
+      "name": "rss-right",
+      "import": "import { rss-right } from 'lineicons-svelte';",
+      "component": "<rss-right />"
+    },
+    {
+      "name": "ruler-1",
+      "import": "import { ruler-1 } from 'lineicons-svelte';",
+      "component": "<ruler-1 />"
+    },
+    {
+      "name": "ruler-pen",
+      "import": "import { ruler-pen } from 'lineicons-svelte';",
+      "component": "<ruler-pen />"
+    },
+    {
+      "name": "rupee",
+      "import": "import { rupee } from 'lineicons-svelte';",
+      "component": "<rupee />"
+    },
+    {
+      "name": "safari",
+      "import": "import { safari } from 'lineicons-svelte';",
+      "component": "<safari />"
+    },
+    {
+      "name": "sanity",
+      "import": "import { sanity } from 'lineicons-svelte';",
+      "component": "<sanity />"
+    },
+    {
+      "name": "school-bench-1",
+      "import": "import { school-bench-1 } from 'lineicons-svelte';",
+      "component": "<school-bench-1 />"
+    },
+    {
+      "name": "school-bench-2",
+      "import": "import { school-bench-2 } from 'lineicons-svelte';",
+      "component": "<school-bench-2 />"
+    },
+    {
+      "name": "scissors-1-vertical",
+      "import": "import { scissors-1-vertical } from 'lineicons-svelte';",
+      "component": "<scissors-1-vertical />"
+    },
+    {
+      "name": "scoter",
+      "import": "import { scoter } from 'lineicons-svelte';",
+      "component": "<scoter />"
+    },
+    {
+      "name": "scroll-down-2",
+      "import": "import { scroll-down-2 } from 'lineicons-svelte';",
+      "component": "<scroll-down-2 />"
+    },
+    {
+      "name": "search-1",
+      "import": "import { search-1 } from 'lineicons-svelte';",
+      "component": "<search-1 />"
+    },
+    {
+      "name": "search-2",
+      "import": "import { search-2 } from 'lineicons-svelte';",
+      "component": "<search-2 />"
+    },
+    {
+      "name": "search-minus",
+      "import": "import { search-minus } from 'lineicons-svelte';",
+      "component": "<search-minus />"
+    },
+    {
+      "name": "search-plus",
+      "import": "import { search-plus } from 'lineicons-svelte';",
+      "component": "<search-plus />"
+    },
+    {
+      "name": "search-text",
+      "import": "import { search-text } from 'lineicons-svelte';",
+      "component": "<search-text />"
+    },
+    {
+      "name": "select-cursor-1",
+      "import": "import { select-cursor-1 } from 'lineicons-svelte';",
+      "component": "<select-cursor-1 />"
+    },
+    {
+      "name": "seo-monitor",
+      "import": "import { seo-monitor } from 'lineicons-svelte';",
+      "component": "<seo-monitor />"
+    },
+    {
+      "name": "service-bell-1",
+      "import": "import { service-bell-1 } from 'lineicons-svelte';",
+      "component": "<service-bell-1 />"
+    },
+    {
+      "name": "share-1",
+      "import": "import { share-1 } from 'lineicons-svelte';",
+      "component": "<share-1 />"
+    },
+    {
+      "name": "share-1-circle",
+      "import": "import { share-1-circle } from 'lineicons-svelte';",
+      "component": "<share-1-circle />"
+    },
+    {
+      "name": "share-2",
+      "import": "import { share-2 } from 'lineicons-svelte';",
+      "component": "<share-2 />"
+    },
+    {
+      "name": "shield-2",
+      "import": "import { shield-2 } from 'lineicons-svelte';",
+      "component": "<shield-2 />"
+    },
+    {
+      "name": "shield-2-check",
+      "import": "import { shield-2-check } from 'lineicons-svelte';",
+      "component": "<shield-2-check />"
+    },
+    {
+      "name": "shield-dollar",
+      "import": "import { shield-dollar } from 'lineicons-svelte';",
+      "component": "<shield-dollar />"
+    },
+    {
+      "name": "shift-left",
+      "import": "import { shift-left } from 'lineicons-svelte';",
+      "component": "<shift-left />"
+    },
+    {
+      "name": "shift-right",
+      "import": "import { shift-right } from 'lineicons-svelte';",
+      "component": "<shift-right />"
+    },
+    {
+      "name": "ship-1",
+      "import": "import { ship-1 } from 'lineicons-svelte';",
+      "component": "<ship-1 />"
+    },
+    {
+      "name": "shirt-1",
+      "import": "import { shirt-1 } from 'lineicons-svelte';",
+      "component": "<shirt-1 />"
+    },
+    {
+      "name": "shopify",
+      "import": "import { shopify } from 'lineicons-svelte';",
+      "component": "<shopify />"
+    },
+    {
+      "name": "shovel",
+      "import": "import { shovel } from 'lineicons-svelte';",
+      "component": "<shovel />"
+    },
+    {
+      "name": "shuffle",
+      "import": "import { shuffle } from 'lineicons-svelte';",
+      "component": "<shuffle />"
+    },
+    {
+      "name": "sign-post-left",
+      "import": "import { sign-post-left } from 'lineicons-svelte';",
+      "component": "<sign-post-left />"
+    },
+    {
+      "name": "signal-app",
+      "import": "import { signal-app } from 'lineicons-svelte';",
+      "component": "<signal-app />"
+    },
+    {
+      "name": "signs-post-2",
+      "import": "import { signs-post-2 } from 'lineicons-svelte';",
+      "component": "<signs-post-2 />"
+    },
+    {
+      "name": "sketch",
+      "import": "import { sketch } from 'lineicons-svelte';",
+      "component": "<sketch />"
+    },
+    {
+      "name": "skype",
+      "import": "import { skype } from 'lineicons-svelte';",
+      "component": "<skype />"
+    },
+    {
+      "name": "slack",
+      "import": "import { slack } from 'lineicons-svelte';",
+      "component": "<slack />"
+    },
+    {
+      "name": "slice-2",
+      "import": "import { slice-2 } from 'lineicons-svelte';",
+      "component": "<slice-2 />"
+    },
+    {
+      "name": "sliders-horizontal-square-2",
+      "import": "import { sliders-horizontal-square-2 } from 'lineicons-svelte';",
+      "component": "<sliders-horizontal-square-2 />"
+    },
+    {
+      "name": "slideshare",
+      "import": "import { slideshare } from 'lineicons-svelte';",
+      "component": "<slideshare />"
+    },
+    {
+      "name": "snapchat",
+      "import": "import { snapchat } from 'lineicons-svelte';",
+      "component": "<snapchat />"
+    },
+    {
+      "name": "sort-alphabetical",
+      "import": "import { sort-alphabetical } from 'lineicons-svelte';",
+      "component": "<sort-alphabetical />"
+    },
+    {
+      "name": "sort-high-to-low",
+      "import": "import { sort-high-to-low } from 'lineicons-svelte';",
+      "component": "<sort-high-to-low />"
+    },
+    {
+      "name": "soundcloud",
+      "import": "import { soundcloud } from 'lineicons-svelte';",
+      "component": "<soundcloud />"
+    },
+    {
+      "name": "spacex",
+      "import": "import { spacex } from 'lineicons-svelte';",
+      "component": "<spacex />"
+    },
+    {
+      "name": "spellcheck",
+      "import": "import { spellcheck } from 'lineicons-svelte';",
+      "component": "<spellcheck />"
+    },
+    {
+      "name": "spinner-2-sacle",
+      "import": "import { spinner-2-sacle } from 'lineicons-svelte';",
+      "component": "<spinner-2-sacle />"
+    },
+    {
+      "name": "spinner-3",
+      "import": "import { spinner-3 } from 'lineicons-svelte';",
+      "component": "<spinner-3 />"
+    },
+    {
+      "name": "sports",
+      "import": "import { sports } from 'lineicons-svelte';",
+      "component": "<sports />"
+    },
+    {
+      "name": "spotify",
+      "import": "import { spotify } from 'lineicons-svelte';",
+      "component": "<spotify />"
+    },
+    {
+      "name": "spotify-alt",
+      "import": "import { spotify-alt } from 'lineicons-svelte';",
+      "component": "<spotify-alt />"
+    },
+    {
+      "name": "squarespace",
+      "import": "import { squarespace } from 'lineicons-svelte';",
+      "component": "<squarespace />"
+    },
+    {
+      "name": "stackoverflow",
+      "import": "import { stackoverflow } from 'lineicons-svelte';",
+      "component": "<stackoverflow />"
+    },
+    {
+      "name": "stamp",
+      "import": "import { stamp } from 'lineicons-svelte';",
+      "component": "<stamp />"
+    },
+    {
+      "name": "star-fat",
+      "import": "import { star-fat } from 'lineicons-svelte';",
+      "component": "<star-fat />"
+    },
+    {
+      "name": "star-fat-half-2",
+      "import": "import { star-fat-half-2 } from 'lineicons-svelte';",
+      "component": "<star-fat-half-2 />"
+    },
+    {
+      "name": "star-sharp-disabled",
+      "import": "import { star-sharp-disabled } from 'lineicons-svelte';",
+      "component": "<star-sharp-disabled />"
+    },
+    {
+      "name": "statista",
+      "import": "import { statista } from 'lineicons-svelte';",
+      "component": "<statista />"
+    },
+    {
+      "name": "steam",
+      "import": "import { steam } from 'lineicons-svelte';",
+      "component": "<steam />"
+    },
+    {
+      "name": "stethoscope-1",
+      "import": "import { stethoscope-1 } from 'lineicons-svelte';",
+      "component": "<stethoscope-1 />"
+    },
+    {
+      "name": "stopwatch",
+      "import": "import { stopwatch } from 'lineicons-svelte';",
+      "component": "<stopwatch />"
+    },
+    {
+      "name": "storage-hdd-2",
+      "import": "import { storage-hdd-2 } from 'lineicons-svelte';",
+      "component": "<storage-hdd-2 />"
+    },
+    {
+      "name": "strikethrough-1",
+      "import": "import { strikethrough-1 } from 'lineicons-svelte';",
+      "component": "<strikethrough-1 />"
+    },
+    {
+      "name": "stripe",
+      "import": "import { stripe } from 'lineicons-svelte';",
+      "component": "<stripe />"
+    },
+    {
+      "name": "stumbleupon",
+      "import": "import { stumbleupon } from 'lineicons-svelte';",
+      "component": "<stumbleupon />"
+    },
+    {
+      "name": "sun-1",
+      "import": "import { sun-1 } from 'lineicons-svelte';",
+      "component": "<sun-1 />"
+    },
+    {
+      "name": "supabase",
+      "import": "import { supabase } from 'lineicons-svelte';",
+      "component": "<supabase />"
+    },
+    {
+      "name": "surfboard-2",
+      "import": "import { surfboard-2 } from 'lineicons-svelte';",
+      "component": "<surfboard-2 />"
+    },
+    {
+      "name": "svelte",
+      "import": "import { svelte } from 'lineicons-svelte';",
+      "component": "<svelte />"
+    },
+    {
+      "name": "swift",
+      "import": "import { swift } from 'lineicons-svelte';",
+      "component": "<swift />"
+    },
+    {
+      "name": "tab",
+      "import": "import { tab } from 'lineicons-svelte';",
+      "component": "<tab />"
+    },
+    {
+      "name": "tailwindcss",
+      "import": "import { tailwindcss } from 'lineicons-svelte';",
+      "component": "<tailwindcss />"
+    },
+    {
+      "name": "target-user",
+      "import": "import { target-user } from 'lineicons-svelte';",
+      "component": "<target-user />"
+    },
+    {
+      "name": "telegram",
+      "import": "import { telegram } from 'lineicons-svelte';",
+      "component": "<telegram />"
+    },
+    {
+      "name": "telephone-1",
+      "import": "import { telephone-1 } from 'lineicons-svelte';",
+      "component": "<telephone-1 />"
+    },
+    {
+      "name": "telephone-3",
+      "import": "import { telephone-3 } from 'lineicons-svelte';",
+      "component": "<telephone-3 />"
+    },
+    {
+      "name": "tesla",
+      "import": "import { tesla } from 'lineicons-svelte';",
+      "component": "<tesla />"
+    },
+    {
+      "name": "text-format",
+      "import": "import { text-format } from 'lineicons-svelte';",
+      "component": "<text-format />"
+    },
+    {
+      "name": "text-format-remove",
+      "import": "import { text-format-remove } from 'lineicons-svelte';",
+      "component": "<text-format-remove />"
+    },
+    {
+      "name": "text-paragraph",
+      "import": "import { text-paragraph } from 'lineicons-svelte';",
+      "component": "<text-paragraph />"
+    },
+    {
+      "name": "thumbs-down-3",
+      "import": "import { thumbs-down-3 } from 'lineicons-svelte';",
+      "component": "<thumbs-down-3 />"
+    },
+    {
+      "name": "thumbs-up-3",
+      "import": "import { thumbs-up-3 } from 'lineicons-svelte';",
+      "component": "<thumbs-up-3 />"
+    },
+    {
+      "name": "ticket-1",
+      "import": "import { ticket-1 } from 'lineicons-svelte';",
+      "component": "<ticket-1 />"
+    },
+    {
+      "name": "tickets-3",
+      "import": "import { tickets-3 } from 'lineicons-svelte';",
+      "component": "<tickets-3 />"
+    },
+    {
+      "name": "tiktok",
+      "import": "import { tiktok } from 'lineicons-svelte';",
+      "component": "<tiktok />"
+    },
+    {
+      "name": "tiktok-alt",
+      "import": "import { tiktok-alt } from 'lineicons-svelte';",
+      "component": "<tiktok-alt />"
+    },
+    {
+      "name": "tower-broadcast-1",
+      "import": "import { tower-broadcast-1 } from 'lineicons-svelte';",
+      "component": "<tower-broadcast-1 />"
+    },
+    {
+      "name": "toyota",
+      "import": "import { toyota } from 'lineicons-svelte';",
+      "component": "<toyota />"
+    },
+    {
+      "name": "train-1",
+      "import": "import { train-1 } from 'lineicons-svelte';",
+      "component": "<train-1 />"
+    },
+    {
+      "name": "train-3",
+      "import": "import { train-3 } from 'lineicons-svelte';",
+      "component": "<train-3 />"
+    },
+    {
+      "name": "trash-3",
+      "import": "import { trash-3 } from 'lineicons-svelte';",
+      "component": "<trash-3 />"
+    },
+    {
+      "name": "tree-2",
+      "import": "import { tree-2 } from 'lineicons-svelte';",
+      "component": "<tree-2 />"
+    },
+    {
+      "name": "trees-3",
+      "import": "import { trees-3 } from 'lineicons-svelte';",
+      "component": "<trees-3 />"
+    },
+    {
+      "name": "trello",
+      "import": "import { trello } from 'lineicons-svelte';",
+      "component": "<trello />"
+    },
+    {
+      "name": "trend-down-1",
+      "import": "import { trend-down-1 } from 'lineicons-svelte';",
+      "component": "<trend-down-1 />"
+    },
+    {
+      "name": "trend-up-1",
+      "import": "import { trend-up-1 } from 'lineicons-svelte';",
+      "component": "<trend-up-1 />"
+    },
+    {
+      "name": "trophy-1",
+      "import": "import { trophy-1 } from 'lineicons-svelte';",
+      "component": "<trophy-1 />"
+    },
+    {
+      "name": "trowel-1",
+      "import": "import { trowel-1 } from 'lineicons-svelte';",
+      "component": "<trowel-1 />"
+    },
+    {
+      "name": "truck-delivery-1",
+      "import": "import { truck-delivery-1 } from 'lineicons-svelte';",
+      "component": "<truck-delivery-1 />"
+    },
+    {
+      "name": "tumblr",
+      "import": "import { tumblr } from 'lineicons-svelte';",
+      "component": "<tumblr />"
+    },
+    {
+      "name": "turborepo",
+      "import": "import { turborepo } from 'lineicons-svelte';",
+      "component": "<turborepo />"
+    },
+    {
+      "name": "twitch",
+      "import": "import { twitch } from 'lineicons-svelte';",
+      "component": "<twitch />"
+    },
+    {
+      "name": "twitter-old",
+      "import": "import { twitter-old } from 'lineicons-svelte';",
+      "component": "<twitter-old />"
+    },
+    {
+      "name": "typescript",
+      "import": "import { typescript } from 'lineicons-svelte';",
+      "component": "<typescript />"
+    },
+    {
+      "name": "uber",
+      "import": "import { uber } from 'lineicons-svelte';",
+      "component": "<uber />"
+    },
+    {
+      "name": "uber-symbol",
+      "import": "import { uber-symbol } from 'lineicons-svelte';",
+      "component": "<uber-symbol />"
+    },
+    {
+      "name": "ubuntu",
+      "import": "import { ubuntu } from 'lineicons-svelte';",
+      "component": "<ubuntu />"
+    },
+    {
+      "name": "underline",
+      "import": "import { underline } from 'lineicons-svelte';",
+      "component": "<underline />"
+    },
+    {
+      "name": "unlink-2-angular-eft",
+      "import": "import { unlink-2-angular-eft } from 'lineicons-svelte';",
+      "component": "<unlink-2-angular-eft />"
+    },
+    {
+      "name": "unlocked-2",
+      "import": "import { unlocked-2 } from 'lineicons-svelte';",
+      "component": "<unlocked-2 />"
+    },
+    {
+      "name": "unsplash",
+      "import": "import { unsplash } from 'lineicons-svelte';",
+      "component": "<unsplash />"
+    },
+    {
+      "name": "upload-1",
+      "import": "import { upload-1 } from 'lineicons-svelte';",
+      "component": "<upload-1 />"
+    },
+    {
+      "name": "upload-circle-1",
+      "import": "import { upload-circle-1 } from 'lineicons-svelte';",
+      "component": "<upload-circle-1 />"
+    },
+    {
+      "name": "user-4",
+      "import": "import { user-4 } from 'lineicons-svelte';",
+      "component": "<user-4 />"
+    },
+    {
+      "name": "user-multiple-4",
+      "import": "import { user-multiple-4 } from 'lineicons-svelte';",
+      "component": "<user-multiple-4 />"
+    },
+    {
+      "name": "vector-nodes-6",
+      "import": "import { vector-nodes-6 } from 'lineicons-svelte';",
+      "component": "<vector-nodes-6 />"
+    },
+    {
+      "name": "vector-nodes-7",
+      "import": "import { vector-nodes-7 } from 'lineicons-svelte';",
+      "component": "<vector-nodes-7 />"
+    },
+    {
+      "name": "vercel",
+      "import": "import { vercel } from 'lineicons-svelte';",
+      "component": "<vercel />"
+    },
+    {
+      "name": "vimeo",
+      "import": "import { vimeo } from 'lineicons-svelte';",
+      "component": "<vimeo />"
+    },
+    {
+      "name": "visa",
+      "import": "import { visa } from 'lineicons-svelte';",
+      "component": "<visa />"
+    },
+    {
+      "name": "vite",
+      "import": "import { vite } from 'lineicons-svelte';",
+      "component": "<vite />"
+    },
+    {
+      "name": "vk",
+      "import": "import { vk } from 'lineicons-svelte';",
+      "component": "<vk />"
+    },
+    {
+      "name": "vmware",
+      "import": "import { vmware } from 'lineicons-svelte';",
+      "component": "<vmware />"
+    },
+    {
+      "name": "volkswagen",
+      "import": "import { volkswagen } from 'lineicons-svelte';",
+      "component": "<volkswagen />"
+    },
+    {
+      "name": "volume-1",
+      "import": "import { volume-1 } from 'lineicons-svelte';",
+      "component": "<volume-1 />"
+    },
+    {
+      "name": "volume-high",
+      "import": "import { volume-high } from 'lineicons-svelte';",
+      "component": "<volume-high />"
+    },
+    {
+      "name": "volume-low",
+      "import": "import { volume-low } from 'lineicons-svelte';",
+      "component": "<volume-low />"
+    },
+    {
+      "name": "volume-mute",
+      "import": "import { volume-mute } from 'lineicons-svelte';",
+      "component": "<volume-mute />"
+    },
+    {
+      "name": "volume-off",
+      "import": "import { volume-off } from 'lineicons-svelte';",
+      "component": "<volume-off />"
+    },
+    {
+      "name": "vs-code",
+      "import": "import { vs-code } from 'lineicons-svelte';",
+      "component": "<vs-code />"
+    },
+    {
+      "name": "vuejs",
+      "import": "import { vuejs } from 'lineicons-svelte';",
+      "component": "<vuejs />"
+    },
+    {
+      "name": "wallet-1",
+      "import": "import { wallet-1 } from 'lineicons-svelte';",
+      "component": "<wallet-1 />"
+    },
+    {
+      "name": "watch-beat-1",
+      "import": "import { watch-beat-1 } from 'lineicons-svelte';",
+      "component": "<watch-beat-1 />"
+    },
+    {
+      "name": "water-drop-1",
+      "import": "import { water-drop-1 } from 'lineicons-svelte';",
+      "component": "<water-drop-1 />"
+    },
+    {
+      "name": "webflow",
+      "import": "import { webflow } from 'lineicons-svelte';",
+      "component": "<webflow />"
+    },
+    {
+      "name": "webhooks",
+      "import": "import { webhooks } from 'lineicons-svelte';",
+      "component": "<webhooks />"
+    },
+    {
+      "name": "wechat",
+      "import": "import { wechat } from 'lineicons-svelte';",
+      "component": "<wechat />"
+    },
+    {
+      "name": "weight-machine-1",
+      "import": "import { weight-machine-1 } from 'lineicons-svelte';",
+      "component": "<weight-machine-1 />"
+    },
+    {
+      "name": "whatsapp",
+      "import": "import { whatsapp } from 'lineicons-svelte';",
+      "component": "<whatsapp />"
+    },
+    {
+      "name": "wheelbarrow-empty",
+      "import": "import { wheelbarrow-empty } from 'lineicons-svelte';",
+      "component": "<wheelbarrow-empty />"
+    },
+    {
+      "name": "wheelchair-1",
+      "import": "import { wheelchair-1 } from 'lineicons-svelte';",
+      "component": "<wheelchair-1 />"
+    },
+    {
+      "name": "windows",
+      "import": "import { windows } from 'lineicons-svelte';",
+      "component": "<windows />"
+    },
+    {
+      "name": "wise",
+      "import": "import { wise } from 'lineicons-svelte';",
+      "component": "<wise />"
+    },
+    {
+      "name": "wordpress",
+      "import": "import { wordpress } from 'lineicons-svelte';",
+      "component": "<wordpress />"
+    },
+    {
+      "name": "www",
+      "import": "import { www } from 'lineicons-svelte';",
+      "component": "<www />"
+    },
+    {
+      "name": "www-cursor",
+      "import": "import { www-cursor } from 'lineicons-svelte';",
+      "component": "<www-cursor />"
+    },
+    {
+      "name": "x",
+      "import": "import { x } from 'lineicons-svelte';",
+      "component": "<x />"
+    },
+    {
+      "name": "xampp",
+      "import": "import { xampp } from 'lineicons-svelte';",
+      "component": "<xampp />"
+    },
+    {
+      "name": "xbox",
+      "import": "import { xbox } from 'lineicons-svelte';",
+      "component": "<xbox />"
+    },
+    {
+      "name": "xmark",
+      "import": "import { xmark } from 'lineicons-svelte';",
+      "component": "<xmark />"
+    },
+    {
+      "name": "xmark-circle",
+      "import": "import { xmark-circle } from 'lineicons-svelte';",
+      "component": "<xmark-circle />"
+    },
+    {
+      "name": "xrp",
+      "import": "import { xrp } from 'lineicons-svelte';",
+      "component": "<xrp />"
+    },
+    {
+      "name": "yahoo",
+      "import": "import { yahoo } from 'lineicons-svelte';",
+      "component": "<yahoo />"
+    },
+    {
+      "name": "yarn",
+      "import": "import { yarn } from 'lineicons-svelte';",
+      "component": "<yarn />"
+    },
+    {
+      "name": "ycombinator",
+      "import": "import { ycombinator } from 'lineicons-svelte';",
+      "component": "<ycombinator />"
+    },
+    {
+      "name": "yen",
+      "import": "import { yen } from 'lineicons-svelte';",
+      "component": "<yen />"
+    },
+    {
+      "name": "youtube",
+      "import": "import { youtube } from 'lineicons-svelte';",
+      "component": "<youtube />"
+    },
+    {
+      "name": "youtube-kids",
+      "import": "import { youtube-kids } from 'lineicons-svelte';",
+      "component": "<youtube-kids />"
+    },
+    {
+      "name": "youtube-music",
+      "import": "import { youtube-music } from 'lineicons-svelte';",
+      "component": "<youtube-music />"
+    },
+    {
+      "name": "zapier",
+      "import": "import { zapier } from 'lineicons-svelte';",
+      "component": "<zapier />"
+    },
+    {
+      "name": "zero-size",
+      "import": "import { zero-size } from 'lineicons-svelte';",
+      "component": "<zero-size />"
+    },
+    {
+      "name": "zoom",
+      "import": "import { zoom } from 'lineicons-svelte';",
+      "component": "<zoom />"
+    }
+  ]
+}

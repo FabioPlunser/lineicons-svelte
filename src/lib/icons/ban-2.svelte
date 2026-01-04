@@ -1,0 +1,17 @@
+<script lang="ts">
+import Icon from '../Icon.svelte';
+import type { IconNode, IconProps } from '../types.js';
+
+let props: IconProps = $props();
+
+const iconNode: IconNode = [["path",{"d":"M12 2.00098C6.47715 2.00098 2 6.47813 2 12.001C2 17.5238 6.47715 22.001 12 22.001C17.5228 22.001 22 17.5238 22 12.001C22 6.47813 17.5228 2.00098 12 2.00098ZM3.5 12.001C3.5 7.30656 7.30558 3.50098 12 3.50098C14.0774 3.50098 15.9808 4.24624 17.4573 5.48398L5.48301 17.4583C4.24526 15.9818 3.5 14.0784 3.5 12.001ZM6.54375 18.5189L18.5179 6.54473C19.7551 8.02111 20.5 9.92405 20.5 12.001C20.5 16.6954 16.6944 20.501 12 20.501C9.92307 20.501 8.02013 19.7561 6.54375 18.5189Z"}]];
+
+/**
+ * @component @name Ban2
+ * @description Lineicons SVG icon component for ban-2
+ */
+</script>
+
+<Icon name="ban-2" {...props} iconNode={iconNode}>
+  {@render props.children?.()}
+</Icon>

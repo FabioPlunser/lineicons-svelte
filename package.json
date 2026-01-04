@@ -1,0 +1,83 @@
+{
+  "name": "lineicons-svelte",
+  "version": "1.0.0",
+  "description": "Lineicons SVG icon components for Svelte 5",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "npm run package",
+    "preview": "vite preview",
+    "package": "svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "generate-icons": "node scripts/generate-icons.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "generate-docs": "node scripts/generate-docs.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.svelte.d.ts",
+      "svelte": "./dist/icons/*.svelte",
+      "default": "./dist/icons/*.svelte"
+    },
+    "./Icon.svelte": {
+      "types": "./dist/Icon.svelte.d.ts",
+      "svelte": "./dist/Icon.svelte",
+      "default": "./dist/Icon.svelte"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/package": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/svelte": "^5.3.1",
+    "@vitest/ui": "^4.0.16",
+    "jsdom": "^27.4.0",
+    "publint": "^0.2.0",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typedoc": "^0.28.15",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vitest": "^4.0.16"
+  },
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "icons",
+    "lineicons",
+    "svg",
+    "components",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/lineicons-svelte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/lineicons-svelte/issues"
+  },
+  "homepage": "https://YOUR_USERNAME.github.io/lineicons-svelte",
+  "author": "YOUR_NAME"
+}
